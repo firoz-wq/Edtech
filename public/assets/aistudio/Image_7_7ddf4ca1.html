@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&family=Space+Grotesk:wght@600;700&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100..900&family=Space+Grotesk:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-secondary-fixed-variant": "#881d24", "primary-container": "#6c5ce7", "inverse-on-surface": "#eef0ff", "tertiary-fixed": "#ffdcc5", "on-secondary-container": "#720b16", "on-error-container": "#93000a", "outline": "#787586", "background": "#faf8ff", "tertiary-container": "#b05a03", "outline-variant": "#c8c4d7", "secondary-container": "#ff7675", "on-primary-fixed-variant": "#4029ba", "on-primary": "#ffffff", "error-container": "#ffdad6", "surface-container-lowest": "#ffffff", "secondary-fixed": "#ffdad8", "on-tertiary-container": "#fff5f1", "surface-tint": "#5847d2", "surface-container": "#eaedff", "inverse-primary": "#c6bfff", "primary-fixed": "#e4dfff", "on-secondary": "#ffffff", "surface-container-low": "#f2f3ff", "surface-dim": "#d2d9f4", "surface-container-highest": "#dae2fd", "on-primary-fixed": "#160066", "primary-fixed-dim": "#c6bfff", "tertiary-fixed-dim": "#ffb784", "surface-variant": "#dae2fd", "surface-container-high": "#e2e7ff", "on-tertiary-fixed": "#301400", "on-surface-variant": "#474554", "error": "#ba1a1a", "tertiary": "#8c4600", "secondary-fixed-dim": "#ffb3b0", "on-error": "#ffffff", "on-surface": "#131b2e", "inverse-surface": "#283044", "on-tertiary": "#ffffff", "on-secondary-fixed": "#410006", "surface": "#faf8ff", "surface-bright": "#faf8ff", "on-tertiary-fixed-variant": "#713700", "on-background": "#131b2e", "on-primary-container": "#faf6ff", "primary": "#5341cd", "secondary": "#a83639" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-lg": "1.5rem", "gutter": "1.5rem", "space-md": "1rem", "space-xl": "2.5rem", "margin-mobile": "1.25rem", "space-xs": "0.25rem", "margin": "3rem", "space-sm": "0.5rem", "gutter-mobile": "1rem" }, fontFamily: { "body-md": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Plus Jakarta Sans"], "label-sm": ["Space Grotesk"], "headline-sm": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "headline-xl": ["Plus Jakarta Sans"], "label-lg": ["Space Grotesk"], "label-md": ["Space Grotesk"], "body-lg": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "headline-xl-mobile": ["Plus Jakarta Sans"] }, fontSize: { "body-md": ["15px", { "lineHeight": "24px", "fontWeight": "400" }], "headline-md": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "700" }], "headline-lg-mobile": ["26px", { "lineHeight": "34px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "label-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "600" }], "headline-sm": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-xl": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.03em", "fontWeight": "800" }], "label-lg": ["14px", { "lineHeight": "18px", "letterSpacing": "0.02em", "fontWeight": "700" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.03em", "fontWeight": "600" }], "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }], "body-sm": ["13px", { "lineHeight": "20px", "fontWeight": "400" }], "headline-xl-mobile": ["34px", { "lineHeight": "42px", "letterSpacing": "-0.025em", "fontWeight": "800" }] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-on-surface antialiased flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-margin-mobile flex items-center justify-between"><div class="flex items-center gap-space-sm min-w-0"><button aria-label="Go back" class="min-w-[44px] min-h-[44px] flex items-center justify-center rounded-full text-on-surface hover:bg-surface-container-low transition-colors -ml-2" onclick="history.back()"><span class="material-symbols-outlined text-[24px]">arrow_back</span></button><img alt="Spark Brand Icon" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDuQqZ3TBJyXiDCUcY35jRZG55LFcm6ceyqWRED9G8o9qOt_t83a4FAHbDMj-S5u85p0jADWL8okTp4-VPn2LNBo8LgXpXFRBJ6J7W7FaPAt973xPISwv5RPhmAbjzjZZTJFspz4iGblA_TZdYqQ1qkSsTtjZWJoLqUfr4iD8nI1143m2_menyHSg77Fe6PmKCsgHES8wsMKouKTmtxo-yg7a6WasJpC95DnaFjFquCfW7aZ95SMc5V"/><h1 class="font-headline-sm text-headline-sm text-on-surface truncate">Group Settings And Permissions</h1></div><div class="flex items-center shrink-0"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-primary/20" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCPqkG9b52LJlt55yNBfubeI-aKPMxhsM9i4mjcTIqVFDzQiwA3GgfxyHgbF7WKRzXfo-KNL-L4W2QaHX2hk0PzMCbKytsQY2VvZ-Fs-S_5cXv3GvFhkUxM3JGzUsLxqX0cegPd3RHEVtO0rNVyPwRpalWXyJmVcfsj1ycHaAJVAONFvCR6xlp5F0lV8qyV3OK91m3X90zPDolMkHxUd6zvY-NR3pMdfnRDKjQQJM3JzwtnKohWnSN0"/></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-safe bg-surface"><div class="flex flex-col w-full pb-12">
+<!-- Status Feedback Banner (Dynamic Toast) -->
+<div class="fixed bottom-6 left-4 right-4 z-50 transform translate-y-32 transition-transform duration-300 pointer-events-none flex justify-center" id="toastNotification">
+<div class="bg-inverse-surface text-inverse-on-surface px-space-md py-space-sm rounded-full shadow-xl flex items-center gap-space-sm font-label-md text-label-md">
+<span class="material-symbols-outlined text-[18px] text-tertiary-fixed">check_circle</span>
+<span id="toastMessage">Invite link copied to clipboard</span>
+</div>
+</div>
+<!-- Group Summary Hero Card -->
+<section class="px-margin-mobile pt-space-md pb-space-sm">
+<div class="bg-surface-container-low rounded-xl p-space-md shadow-sm relative overflow-hidden">
+<div class="absolute -right-12 -top-12 w-36 h-36 bg-primary/10 rounded-full blur-2xl pointer-events-none"></div>
+<div class="flex items-start gap-space-md relative">
+<div class="w-14 h-14 rounded-xl bg-primary text-on-primary flex items-center justify-center shrink-0 shadow-md">
+<span class="material-symbols-outlined text-[32px]">eco</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm uppercase mb-1">
+<span class="material-symbols-outlined text-[12px]" style="font-variation-settings: 'FILL' 1;">lock</span>
+            Private Lab Group
+          </div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface leading-tight truncate">Carbon Blueprints & Sustainable Campus</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1 mt-0.5">Syndicate ID: #SPK-8842 · Stanford CleanTech Guild</p>
+</div>
+</div>
+<!-- Quick Group Share Action Panel -->
+<div class="mt-space-md pt-space-sm bg-surface-container-lowest rounded-lg p-space-sm shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">share</span>
+<span class="font-label-lg text-label-lg text-on-surface">Share Group & QR Code</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant bg-surface-container px-2 py-0.5 rounded-full">Expires in 48h</span>
+</div>
+<div class="grid grid-cols-2 gap-2 mt-1">
+<button class="role-btn active flex items-center justify-center gap-1.5 py-2 px-3 rounded-lg font-label-md text-label-md bg-primary text-on-primary transition-all shadow-sm" id="inviteRoleToggleViewer" onclick="setInviteRole('Viewer')">
+<span class="material-symbols-outlined text-[16px]">visibility</span>
+            Viewer Link
+          </button>
+<button class="role-btn flex items-center justify-center gap-1.5 py-2 px-3 rounded-lg font-label-md text-label-md bg-surface-container text-on-surface hover:bg-surface-container-high transition-all" id="inviteRoleToggleContributor" onclick="setInviteRole('Contributor')">
+<span class="material-symbols-outlined text-[16px]">edit</span>
+            Contributor Link
+          </button>
+</div>
+<div class="flex items-center gap-2 mt-1">
+<div class="flex-1 bg-surface-container-low px-3 py-2 rounded-lg font-label-sm text-label-sm text-on-surface-variant truncate select-all">
+            https://spark.edu/syndicate/c-blueprints?token=9xk18z
+          </div>
+<button aria-label="Copy Invite Link" class="shrink-0 p-2 rounded-lg bg-primary-container text-on-primary-container hover:opacity-90 transition-opacity flex items-center justify-center" onclick="triggerCopyShare()">
+<span class="material-symbols-outlined text-[20px]">content_copy</span>
+</button>
+<button aria-label="Show QR Code" class="shrink-0 p-2 rounded-lg bg-surface-container-high text-on-surface hover:bg-surface-container-highest transition-colors flex items-center justify-center" onclick="toggleQRModal()">
+<span class="material-symbols-outlined text-[20px]">qr_code_2</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive QR Code Bottom Sheet Modal -->
+<div class="hidden fixed inset-0 z-50 bg-on-surface/40 backdrop-blur-sm flex items-end sm:items-center justify-center p-4" id="qrModal">
+<div class="bg-surface-container-lowest w-full max-w-sm rounded-xl p-space-lg shadow-xl flex flex-col items-center text-center animate-bounce-short">
+<div class="w-12 h-1 bg-outline-variant rounded-full mb-4"></div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Campus Syndicate QR</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 mb-4">Hold camera up to join 'Carbon Blueprints' as <span class="font-bold text-primary" id="modalRoleBadge">Viewer</span>.</p>
+<div class="w-52 h-52 bg-surface-container-low rounded-xl p-4 flex items-center justify-center shadow-inner">
+<!-- Stylized Vector QR Code -->
+<svg class="w-full h-full text-on-surface fill-current" viewbox="0 0 100 100">
+<rect fill="none" height="24" rx="3" stroke="currentColor" stroke-width="4" width="24" x="10" y="10"></rect>
+<rect height="12" rx="1" width="12" x="16" y="16"></rect>
+<rect fill="none" height="24" rx="3" stroke="currentColor" stroke-width="4" width="24" x="66" y="10"></rect>
+<rect height="12" rx="1" width="12" x="72" y="16"></rect>
+<rect fill="none" height="24" rx="3" stroke="currentColor" stroke-width="4" width="24" x="10" y="66"></rect>
+<rect height="12" rx="1" width="12" x="16" y="72"></rect>
+<rect height="6" rx="1" width="6" x="42" y="12"></rect>
+<rect height="18" rx="1" width="6" x="52" y="12"></rect>
+<rect height="6" rx="1" width="6" x="42" y="24"></rect>
+<rect class="text-primary fill-current" height="16" rx="2" width="16" x="42" y="42"></rect>
+<rect height="6" rx="1" width="10" x="12" y="42"></rect>
+<rect height="16" rx="1" width="6" x="26" y="42"></rect>
+<rect height="6" rx="1" width="12" x="66" y="42"></rect>
+<rect height="14" rx="1" width="8" x="82" y="42"></rect>
+<rect height="18" rx="1" width="6" x="66" y="56"></rect>
+<rect height="6" rx="1" width="14" x="76" y="64"></rect>
+<rect height="14" rx="1" width="6" x="76" y="76"></rect>
+<rect height="6" rx="1" width="16" x="42" y="66"></rect>
+<rect height="12" rx="1" width="6" x="52" y="78"></rect>
+<rect height="4" rx="1" width="6" x="42" y="86"></rect>
+</svg>
+</div>
+<div class="mt-4 flex items-center gap-2 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-tertiary">timer</span>
+        Valid until Oct 29, 2024 · Single-device secure scan
+      </div>
+<button class="w-full mt-6 py-2.5 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md hover:bg-surface-container-high transition-colors" onclick="toggleQRModal()">
+        Done
+      </button>
+</div>
+</div>
+<!-- Section 1: Privacy & Discovery Settings -->
+<section class="px-margin-mobile mt-space-md">
+<div class="flex items-center justify-between mb-space-xs">
+<h3 class="font-label-lg text-label-lg text-on-surface tracking-wider uppercase">Discovery & Permissions</h3>
+<span class="material-symbols-outlined text-[18px] text-outline">tune</span>
+</div>
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden flex flex-col">
+<!-- Discovery Toggle -->
+<div class="p-space-md flex items-center justify-between gap-space-sm">
+<div class="flex items-start gap-space-sm min-w-0">
+<div class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center shrink-0 text-on-surface">
+<span class="material-symbols-outlined text-[20px]">travel_explore</span>
+</div>
+<div class="min-w-0">
+<div class="font-headline-sm text-[16px] text-on-surface leading-snug">Public Discovery</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Show this syndicate in campus explorer feeds</p>
+</div>
+</div>
+<button aria-checked="false" class="w-12 h-6 rounded-full bg-surface-variant relative transition-colors duration-200 shrink-0 p-0.5 focus:outline-none" onclick="toggleSwitch(this)" role="switch">
+<div class="w-5 h-5 rounded-full bg-surface-container-lowest shadow-sm transform transition-transform duration-200 flex items-center justify-center"></div>
+</button>
+</div>
+<div class="h-[1px] bg-surface-container-low mx-space-md"></div>
+<!-- Interaction Level Segment -->
+<div class="p-space-md flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-[16px] text-on-surface">Forum Interaction Mode</span>
+<span class="font-label-sm text-label-sm text-primary font-bold" id="interactionModeBadge">Approved Only</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Specify who can start debate threads and drop annotations.</p>
+<div class="grid grid-cols-3 gap-1.5 mt-2 bg-surface-container-low p-1 rounded-lg">
+<button class="interaction-mode-btn py-2 px-1 text-center rounded font-label-sm text-label-sm text-on-surface hover:bg-surface-container transition-all" onclick="setInteractionMode(this, 'Open')">
+            All Members
+          </button>
+<button class="interaction-mode-btn active py-2 px-1 text-center rounded font-label-sm text-label-sm bg-surface-container-lowest text-primary font-bold shadow-sm transition-all" onclick="setInteractionMode(this, 'Approved Only')">
+            Approved
+          </button>
+<button class="interaction-mode-btn py-2 px-1 text-center rounded font-label-sm text-label-sm text-on-surface hover:bg-surface-container transition-all" onclick="setInteractionMode(this, 'Broadcast')">
+            Announcement
+          </button>
+</div>
+</div>
+<div class="h-[1px] bg-surface-container-low mx-space-md"></div>
+<!-- Media & Broadcasting Toggles -->
+<div class="p-space-md flex items-center justify-between gap-space-sm">
+<div class="flex items-start gap-space-sm min-w-0">
+<div class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center shrink-0 text-on-surface">
+<span class="material-symbols-outlined text-[20px]">perm_media</span>
+</div>
+<div class="min-w-0">
+<div class="font-headline-sm text-[16px] text-on-surface leading-snug">Rich Media Uploads</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Allow members to attach raw telemetry, videos & slides</p>
+</div>
+</div>
+<button aria-checked="true" class="w-12 h-6 rounded-full bg-primary relative transition-colors duration-200 shrink-0 p-0.5 focus:outline-none" onclick="toggleSwitch(this)" role="switch">
+<div class="w-5 h-5 rounded-full bg-surface-container-lowest shadow-sm transform translate-x-6 transition-transform duration-200 flex items-center justify-center"></div>
+</button>
+</div>
+<div class="h-[1px] bg-surface-container-low mx-space-md"></div>
+<div class="p-space-md flex items-center justify-between gap-space-sm">
+<div class="flex items-start gap-space-sm min-w-0">
+<div class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center shrink-0 text-on-surface">
+<span class="material-symbols-outlined text-[20px]">sensors</span>
+</div>
+<div class="min-w-0">
+<div class="font-headline-sm text-[16px] text-on-surface leading-snug">Live Stage Broadcasts</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Permit instant peer-to-peer audio & video sessions</p>
+</div>
+</div>
+<button aria-checked="false" class="w-12 h-6 rounded-full bg-surface-variant relative transition-colors duration-200 shrink-0 p-0.5 focus:outline-none" onclick="toggleSwitch(this)" role="switch">
+<div class="w-5 h-5 rounded-full bg-surface-container-lowest shadow-sm transform transition-transform duration-200 flex items-center justify-center"></div>
+</button>
+</div>
+</div>
+</section>
+<!-- Section 2: Member Management & Moderation -->
+<section class="px-margin-mobile mt-space-lg">
+<div class="flex items-center justify-between mb-space-xs">
+<div>
+<h3 class="font-label-lg text-label-lg text-on-surface tracking-wider uppercase">Active Syndicate Members</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">5 total participants · 1 muted</p>
+</div>
+<button class="flex items-center gap-1 font-label-md text-label-md text-primary bg-primary/10 px-3 py-1 rounded-full">
+<span class="material-symbols-outlined text-[16px]">person_add</span>
+        Invite
+      </button>
+</div>
+<!-- Quick Search Field -->
+<div class="relative mb-space-sm">
+<span class="material-symbols-outlined absolute left-3 top-2.5 text-outline text-[20px]">search</span>
+<input class="w-full pl-10 pr-4 py-2 bg-surface-container-lowest rounded-lg text-on-surface font-body-sm text-body-sm placeholder:text-outline focus:outline-none focus:bg-surface-container-low transition-colors shadow-sm" id="memberSearchInput" oninput="filterMembers(this.value)" placeholder="Search by name, ID, or university..." type="text"/>
+</div>
+<!-- Member Roster List -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden flex flex-col" id="memberListContainer">
+<!-- Member Item 1: Admin -->
+<div class="member-item p-space-md flex items-center justify-between gap-space-sm" data-search="marcus vance lead stanford @mvance">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="relative shrink-0">
+<img class="w-11 h-11 rounded-full object-cover shadow-sm" data-alt="Close up portrait of a college researcher wearing tortoiseshell glasses, soft natural light, clean academic aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCyjxUD9abaiGI0XFR4E3W0HuEmBeu2EZjFIplvfuJte5j-tmwpguge11YwBEISoNVEYsC6nuvKCWTlOs06dHnMaboBcT8D7mYHukpmSgkC7uRi6kneHUpmRredqlnVs6_r6xnU0tJ--zIV7xVl-uAqQ721B0WotFwnNt_Uox-MKLIjfMcs5d6qB6RUTJUMrbLIgnj5HO3g-_xmSxaUuiG-_h7Rs-0J2BXUQRIF2u3lF-vyNbz4oF3p"/>
+<span class="absolute -bottom-0.5 -right-0.5 w-4 h-4 bg-primary text-on-primary rounded-full flex items-center justify-center text-[10px]" title="Owner">
+<span class="material-symbols-outlined text-[10px]">shield</span>
+</span>
+</div>
+<div class="min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-headline-sm text-[15px] text-on-surface truncate">Marcus Vance</span>
+<span class="px-1.5 py-0.2 rounded bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm">Admin</span>
+</div>
+<p class="font-body-sm text-[12px] text-on-surface-variant truncate">Stanford University · @mvance</p>
+</div>
+</div>
+<div class="shrink-0 flex items-center">
+<span class="text-outline text-label-sm font-label-sm mr-2">Owner</span>
+</div>
+</div>
+<div class="h-[1px] bg-surface-container-low mx-space-md"></div>
+<!-- Member Item 2: Contributor -->
+<div class="member-item p-space-md flex items-center justify-between gap-space-sm" data-search="elena rostova contributor eth zurich @erostova">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="relative shrink-0">
+<img class="w-11 h-11 rounded-full object-cover shadow-sm" data-alt="Portrait of a young European female engineering student outdoors on campus, sunny natural lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCuxyzL1TIysDNeBzEdp01uvYipgNrjqaJh_OH55j3hcwa6HVybarjQP3jwZWcrJw94T2PJhVMkm3RrA7POt8UH5dxr9hJsd-gTe6lVTlpJpHnLWiXVXPdSH--kSfzBuB1puBqHHT995WBG6oGaZiVzNtI4ExmRwO97LXZ1Zk8givMHax7uzqaZnzfv3_24okMGGTm03m0qktgBZDrPM7jSyrBGe14P-DzPCLer9MMqQqrlxwDDiVgp"/>
+<span class="absolute -bottom-0.5 -right-0.5 w-3.5 h-3.5 bg-surface-tint rounded-full"></span>
+</div>
+<div class="min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-headline-sm text-[15px] text-on-surface truncate">Elena Rostova</span>
+<span class="px-1.5 py-0.2 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Contributor</span>
+</div>
+<p class="font-body-sm text-[12px] text-on-surface-variant truncate">ETH Zürich · @erostova</p>
+</div>
+</div>
+<div class="shrink-0 flex items-center gap-1">
+<button class="p-2 rounded-full text-outline hover:text-secondary hover:bg-secondary-fixed transition-colors" onclick="toggleMemberMute(this, 'Elena Rostova')" title="Mute member">
+<span class="material-symbols-outlined text-[20px]">mic</span>
+</button>
+<button class="p-2 rounded-full text-outline hover:text-on-surface hover:bg-surface-container transition-colors" onclick="showMemberActions('Elena Rostova')">
+<span class="material-symbols-outlined text-[20px]">more_vert</span>
+</button>
+</div>
+</div>
+<div class="h-[1px] bg-surface-container-low mx-space-md"></div>
+<!-- Member Item 3: Muted / Restricted Member -->
+<div class="member-item p-space-md flex items-center justify-between gap-space-sm" data-search="kenji sato restricted ucl @ksato">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="relative shrink-0 opacity-80">
+<img class="w-11 h-11 rounded-full object-cover shadow-sm" data-alt="Young East Asian university student in casual streetwear in modern university library setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCUgd3s_mjQ0yEvu6vKw-UMfBei8bqad7vTKl6IGjKJHlczh25IyyvNs11GClZJ4THHV7CkutOn_8dB1tvshEVrX_b7G7nElhwL4a0Mb8HYrVF7uCLrF_izaDAebCdHksYDcIFgdSJGi8T4oSEqwsUr1UQwAFWWdmbjy9as0v8t-SCfzlFVilrZGyu5gPTdkxk8MZqFx5GmiWGw_K_lc33yO8jR6t5Ic1n692DMXnN_X-O6GC3DdlmN"/>
+<span class="absolute -bottom-0.5 -right-0.5 w-4 h-4 bg-secondary-container text-on-secondary-container rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined text-[10px]">volume_off</span>
+</span>
+</div>
+<div class="min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-headline-sm text-[15px] text-on-surface truncate">Kenji Sato</span>
+<span class="px-1.5 py-0.2 rounded bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[11px]">visibility</span>
+                View-Only
+              </span>
+</div>
+<p class="font-body-sm text-[12px] text-on-surface-variant truncate">Univ. College London · @ksato</p>
+</div>
+</div>
+<div class="shrink-0 flex items-center gap-1">
+<button class="p-2 rounded-full text-secondary bg-secondary-fixed/50 hover:bg-secondary-fixed transition-colors" onclick="toggleMemberMute(this, 'Kenji Sato')" title="Unmute member">
+<span class="material-symbols-outlined text-[20px]">volume_off</span>
+</button>
+<button class="p-2 rounded-full text-outline hover:text-on-surface hover:bg-surface-container transition-colors" onclick="showMemberActions('Kenji Sato')">
+<span class="material-symbols-outlined text-[20px]">more_vert</span>
+</button>
+</div>
+</div>
+<div class="h-[1px] bg-surface-container-low mx-space-md"></div>
+<!-- Member Item 4: Contributor -->
+<div class="member-item p-space-md flex items-center justify-between gap-space-sm" data-search="amara diallo contributor mit @amadiallo">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="relative shrink-0">
+<img class="w-11 h-11 rounded-full object-cover shadow-sm" data-alt="Portrait of an African college student smiling warmly in high-tech laboratory with neon blue accents" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJ8sZniRnf8rKaPWsDybWAR5sGiV7URSqywIW3Zsy-7nJMHCFLpfqLL1ddGkLhoZaOgwBaEqGgTjBfbSG-RDgmjtkq_ixIinUWh_N5YrE7nERdwkqpOKCZuKSKCRK-9qwBpIB1tIczPjjn88Fy0AGapOLS8I8BD0GNZYyjcMqC-kmW3vPh8uTa5N3m5I6MYQsXpyAqwNCnT7-BNOvL841ucj3cO7DBsLJzVUvaVWh1oGnBkcQumIWH"/>
+<span class="absolute -bottom-0.5 -right-0.5 w-3.5 h-3.5 bg-surface-tint rounded-full"></span>
+</div>
+<div class="min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-headline-sm text-[15px] text-on-surface truncate">Amara Diallo</span>
+<span class="px-1.5 py-0.2 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Contributor</span>
+</div>
+<p class="font-body-sm text-[12px] text-on-surface-variant truncate">MIT Energy Lab · @amadiallo</p>
+</div>
+</div>
+<div class="shrink-0 flex items-center gap-1">
+<button class="p-2 rounded-full text-outline hover:text-secondary hover:bg-secondary-fixed transition-colors" onclick="toggleMemberMute(this, 'Amara Diallo')" title="Mute member">
+<span class="material-symbols-outlined text-[20px]">mic</span>
+</button>
+<button class="p-2 rounded-full text-outline hover:text-on-surface hover:bg-surface-container transition-colors" onclick="showMemberActions('Amara Diallo')">
+<span class="material-symbols-outlined text-[20px]">more_vert</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 3: Shared Cloud & Content Integrations -->
+<section class="px-margin-mobile mt-space-lg">
+<h3 class="font-label-lg text-label-lg text-on-surface tracking-wider uppercase mb-space-xs">Connected Workspace Drives</h3>
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden flex flex-col">
+<!-- Drive Item -->
+<div class="p-space-md flex items-center justify-between">
+<div class="flex items-center gap-3 min-w-0">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[24px]">folder_shared</span>
+</div>
+<div class="min-w-0">
+<div class="font-headline-sm text-[15px] text-on-surface truncate">Google Workspace Sync</div>
+<p class="font-body-sm text-[12px] text-on-surface-variant truncate">Synced to 'Campus-Decarb-2024' (14.2 GB)</p>
+</div>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-1 rounded bg-surface-container-high text-on-surface shrink-0">Active</span>
+</div>
+<div class="h-[1px] bg-surface-container-low mx-space-md"></div>
+<!-- Whiteboard Sync -->
+<div class="p-space-md flex items-center justify-between">
+<div class="flex items-center gap-3 min-w-0">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-tertiary shrink-0">
+<span class="material-symbols-outlined text-[24px]">draw</span>
+</div>
+<div class="min-w-0">
+<div class="font-headline-sm text-[15px] text-on-surface truncate">Collaborative Canvas</div>
+<p class="font-body-sm text-[12px] text-on-surface-variant truncate">Realtime infinite canvas · All members edit</p>
+</div>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-1 rounded bg-surface-container-high text-on-surface shrink-0">Active</span>
+</div>
+<div class="h-[1px] bg-surface-container-low mx-space-md"></div>
+<!-- Live Stream Archives -->
+<div class="p-space-md flex items-center justify-between">
+<div class="flex items-center gap-3 min-w-0">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-secondary shrink-0">
+<span class="material-symbols-outlined text-[24px]">video_library</span>
+</div>
+<div class="min-w-0">
+<div class="font-headline-sm text-[15px] text-on-surface truncate">Auto-Archive Study Sessions</div>
+<p class="font-body-sm text-[12px] text-on-surface-variant truncate">Store recordings for 90 days</p>
+</div>
+</div>
+<button aria-checked="true" class="w-12 h-6 rounded-full bg-primary relative transition-colors duration-200 shrink-0 p-0.5 focus:outline-none" onclick="toggleSwitch(this)" role="switch">
+<div class="w-5 h-5 rounded-full bg-surface-container-lowest shadow-sm transform translate-x-6 transition-transform duration-200"></div>
+</button>
+</div>
+</div>
+</section>
+<!-- Section 4: Syndicate Danger Zone -->
+<section class="px-margin-mobile mt-space-lg mb-4">
+<div class="bg-error-container/30 rounded-xl p-space-md flex flex-col gap-space-sm">
+<div class="flex items-center gap-2 text-on-error-container">
+<span class="material-symbols-outlined text-[20px]">warning</span>
+<h3 class="font-label-lg text-label-lg uppercase tracking-wider">Danger Zone</h3>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Administrative controls can irreversibly alter group membership, storage logs, and academic attribution.</p>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-2 mt-2">
+<button class="w-full py-2.5 px-4 rounded-lg bg-surface-container-lowest text-on-surface font-label-md text-label-md hover:bg-surface-container flex items-center justify-center gap-2 shadow-sm transition-colors" onclick="promptAction('Transfer Syndicate Leadership')">
+<span class="material-symbols-outlined text-[18px]">swap_horiz</span>
+          Transfer Ownership
+        </button>
+<button class="w-full py-2.5 px-4 rounded-lg bg-secondary text-on-secondary font-label-md text-label-md hover:bg-on-secondary-container flex items-center justify-center gap-2 shadow-sm transition-colors" onclick="promptAction('Archive & Lock Group')">
+<span class="material-symbols-outlined text-[18px]">archive</span>
+          Archive Forum
+        </button>
+</div>
+</div>
+</section>
+</div>
+<script>
+  let currentInviteRole = 'Viewer';
+
+  function triggerCopyShare() {
+    navigator.clipboard?.writeText('https://spark.edu/syndicate/c-blueprints?token=9xk18z');
+    showToast('Secure ' + currentInviteRole + ' link copied!');
+  }
+
+  function setInviteRole(role) {
+    currentInviteRole = role;
+    const viewerBtn = document.getElementById('inviteRoleToggleViewer');
+    const contribBtn = document.getElementById('inviteRoleToggleContributor');
+    const modalBadge = document.getElementById('modalRoleBadge');
+
+    if (role === 'Viewer') {
+      viewerBtn.className = 'role-btn active flex items-center justify-center gap-1.5 py-2 px-3 rounded-lg font-label-md text-label-md bg-primary text-on-primary transition-all shadow-sm';
+      contribBtn.className = 'role-btn flex items-center justify-center gap-1.5 py-2 px-3 rounded-lg font-label-md text-label-md bg-surface-container text-on-surface hover:bg-surface-container-high transition-all';
+    } else {
+      contribBtn.className = 'role-btn active flex items-center justify-center gap-1.5 py-2 px-3 rounded-lg font-label-md text-label-md bg-primary text-on-primary transition-all shadow-sm';
+      viewerBtn.className = 'role-btn flex items-center justify-center gap-1.5 py-2 px-3 rounded-lg font-label-md text-label-md bg-surface-container text-on-surface hover:bg-surface-container-high transition-all';
+    }
+    if (modalBadge) modalBadge.innerText = role;
+    showToast('Invite scope switched to ' + role);
+  }
+
+  function toggleQRModal() {
+    const modal = document.getElementById('qrModal');
+    modal.classList.toggle('hidden');
+  }
+
+  function toggleSwitch(btn) {
+    const isChecked = btn.getAttribute('aria-checked') === 'true';
+    const thumb = btn.firstElementChild;
+    if (isChecked) {
+      btn.setAttribute('aria-checked', 'false');
+      btn.classList.remove('bg-primary');
+      btn.classList.add('bg-surface-variant');
+      thumb.classList.remove('translate-x-6');
+      thumb.classList.add('translate-x-0');
+      showToast('Permission disabled');
+    } else {
+      btn.setAttribute('aria-checked', 'true');
+      btn.classList.remove('bg-surface-variant');
+      btn.classList.add('bg-primary');
+      thumb.classList.remove('translate-x-0');
+      thumb.classList.add('translate-x-6');
+      showToast('Permission enabled');
+    }
+  }
+
+  function setInteractionMode(element, mode) {
+    document.querySelectorAll('.interaction-mode-btn').forEach(btn => {
+      btn.className = 'interaction-mode-btn py-2 px-1 text-center rounded font-label-sm text-label-sm text-on-surface hover:bg-surface-container transition-all';
+    });
+    element.className = 'interaction-mode-btn active py-2 px-1 text-center rounded font-label-sm text-label-sm bg-surface-container-lowest text-primary font-bold shadow-sm transition-all';
+    document.getElementById('interactionModeBadge').innerText = mode;
+    showToast('Interaction mode: ' + mode);
+  }
+
+  function toggleMemberMute(btn, memberName) {
+    const isMuted = btn.classList.contains('text-secondary');
+    if (isMuted) {
+      btn.className = 'p-2 rounded-full text-outline hover:text-secondary hover:bg-secondary-fixed transition-colors';
+      btn.innerHTML = '<span class="material-symbols-outlined text-[20px]">mic</span>';
+      showToast(memberName + ' can now post');
+    } else {
+      btn.className = 'p-2 rounded-full text-secondary bg-secondary-fixed/50 hover:bg-secondary-fixed transition-colors';
+      btn.innerHTML = '<span class="material-symbols-outlined text-[20px]">volume_off</span>';
+      showToast(memberName + ' muted from commenting');
+    }
+  }
+
+  function filterMembers(query) {
+    const q = query.toLowerCase();
+    const items = document.querySelectorAll('.member-item');
+    items.forEach(item => {
+      const data = item.getAttribute('data-search') || '';
+      if (data.includes(q)) {
+        item.style.display = 'flex';
+      } else {
+        item.style.display = 'none';
+      }
+    });
+  }
+
+  function showMemberActions(memberName) {
+    showToast('Member options for ' + memberName);
+  }
+
+  function promptAction(action) {
+    showToast('Triggered: ' + action);
+  }
+
+  let toastTimeout;
+  function showToast(msg) {
+    const toast = document.getElementById('toastNotification');
+    const toastMsg = document.getElementById('toastMessage');
+    toastMsg.innerText = msg;
+    toast.classList.remove('translate-y-32');
+    toast.classList.add('translate-y-0');
+    clearTimeout(toastTimeout);
+    toastTimeout = setTimeout(() => {
+      toast.classList.remove('translate-y-0');
+      toast.classList.add('translate-y-32');
+    }, 2400);
+  }
+</script></main></body></html>

@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;family=Space+Grotesk:wght@600;700&amp;family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100..900&amp;family=Space+Grotesk:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-secondary-fixed-variant": "#881d24", "primary-container": "#6c5ce7", "inverse-on-surface": "#eef0ff", "tertiary-fixed": "#ffdcc5", "on-secondary-container": "#720b16", "on-error-container": "#93000a", "outline": "#787586", "background": "#faf8ff", "tertiary-container": "#b05a03", "outline-variant": "#c8c4d7", "secondary-container": "#ff7675", "on-primary-fixed-variant": "#4029ba", "on-primary": "#ffffff", "error-container": "#ffdad6", "surface-container-lowest": "#ffffff", "secondary-fixed": "#ffdad8", "on-tertiary-container": "#fff5f1", "surface-tint": "#5847d2", "surface-container": "#eaedff", "inverse-primary": "#c6bfff", "primary-fixed": "#e4dfff", "on-secondary": "#ffffff", "surface-container-low": "#f2f3ff", "surface-dim": "#d2d9f4", "surface-container-highest": "#dae2fd", "on-primary-fixed": "#160066", "primary-fixed-dim": "#c6bfff", "tertiary-fixed-dim": "#ffb784", "surface-variant": "#dae2fd", "surface-container-high": "#e2e7ff", "on-tertiary-fixed": "#301400", "on-surface-variant": "#474554", "error": "#ba1a1a", "tertiary": "#8c4600", "secondary-fixed-dim": "#ffb3b0", "on-error": "#ffffff", "on-surface": "#131b2e", "inverse-surface": "#283044", "on-tertiary": "#ffffff", "on-secondary-fixed": "#410006", "surface": "#faf8ff", "surface-bright": "#faf8ff", "on-tertiary-fixed-variant": "#713700", "on-background": "#131b2e", "on-primary-container": "#faf6ff", "primary": "#5341cd", "secondary": "#a83639" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-lg": "1.5rem", "gutter": "1.5rem", "space-md": "1rem", "space-xl": "2.5rem", "margin-mobile": "1.25rem", "space-xs": "0.25rem", "margin": "3rem", "space-sm": "0.5rem", "gutter-mobile": "1rem" }, fontFamily: { "body-md": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Plus Jakarta Sans"], "label-sm": ["Space Grotesk"], "headline-sm": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "headline-xl": ["Plus Jakarta Sans"], "label-lg": ["Space Grotesk"], "label-md": ["Space Grotesk"], "body-lg": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "headline-xl-mobile": ["Plus Jakarta Sans"] }, fontSize: { "body-md": ["15px", { "lineHeight": "24px", "fontWeight": "400" }], "headline-md": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "700" }], "headline-lg-mobile": ["26px", { "lineHeight": "34px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "label-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "600" }], "headline-sm": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-xl": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.03em", "fontWeight": "800" }], "label-lg": ["14px", { "lineHeight": "18px", "letterSpacing": "0.02em", "fontWeight": "700" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.03em", "fontWeight": "600" }], "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }], "body-sm": ["13px", { "lineHeight": "20px", "fontWeight": "400" }], "headline-xl-mobile": ["34px", { "lineHeight": "42px", "letterSpacing": "-0.025em", "fontWeight": "800" }] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-on-surface antialiased flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 px-margin-mobile flex flex-col justify-center gap-space-xs"><div class="flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0"><img alt="Spark Brand Icon" class="h-8 w-auto object-contain shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDuQqZ3TBJyXiDCUcY35jRZG55LFcm6ceyqWRED9G8o9qOt_t83a4FAHbDMj-S5u85p0jADWL8okTp4-VPn2LNBo8LgXpXFRBJ6J7W7FaPAt973xPISwv5RPhmAbjzjZZTJFspz4iGblA_TZdYqQ1qkSsTtjZWJoLqUfr4iD8nI1143m2_menyHSg77Fe6PmKCsgHES8wsMKouKTmtxo-yg7a6WasJpC95DnaFjFquCfW7aZ95SMc5V"/><div class="flex flex-col min-w-0"><span class="font-label-sm text-label-sm text-primary tracking-wider uppercase leading-none">Spark Net</span><span class="font-headline-sm text-headline-sm text-on-surface truncate leading-tight">Explore Interest Rooms &amp; Groups Hub</span></div></div><div class="flex items-center gap-1 shrink-0"><div class="relative flex items-center bg-surface-container-low rounded-full px-2.5 py-1.5 w-24 focus-within:w-36 transition-all duration-300"><span class="material-symbols-outlined text-outline text-[18px]">search</span><input class="bg-transparent w-full ml-1 text-body-sm font-body-sm text-on-surface placeholder:text-outline focus:outline-none" placeholder="Search..." type="search"/></div><a aria-label="Notifications" class="relative w-10 h-10 rounded-full flex items-center justify-center text-on-surface-variant hover:text-primary transition-colors" data-path="notifications" href="#"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-1.5 right-1.5 flex items-center justify-center min-w-[16px] h-4 px-1 rounded-full bg-secondary text-on-secondary font-label-sm text-[9px] font-bold leading-none ring-2 ring-surface">3</span></a><a aria-label="Direct Messages" class="relative w-10 h-10 rounded-full flex items-center justify-center text-on-surface-variant hover:text-primary transition-colors" data-path="direct-and-group-chat-messenger" href="#"><span class="material-symbols-outlined text-[22px]">chat</span><span class="absolute top-1.5 right-1.5 flex items-center justify-center min-w-[16px] h-4 px-1 rounded-full bg-primary text-on-primary font-label-sm text-[9px] font-bold leading-none ring-2 ring-surface">2</span></a><a aria-label="Profile" class="w-10 h-10 flex items-center justify-center shrink-0" data-path="profile-settings" href="#"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-primary/20" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCPqkG9b52LJlt55yNBfubeI-aKPMxhsM9i4mjcTIqVFDzQiwA3GgfxyHgbF7WKRzXfo-KNL-L4W2QaHX2hk0PzMCbKytsQY2VvZ-Fs-S_5cXv3GvFhkUxM3JGzUsLxqX0cegPd3RHEVtO0rNVyPwRpalWXyJmVcfsj1ycHaAJVAONFvCR6xlp5F0lV8qyV3OK91m3X90zPDolMkHxUd6zvY-NR3pMdfnRDKjQQJM3JzwtnKohWnSN0"/></a></div></div></div></header><main class="flex-1 flex flex-col relative w-full pt-20 pb-24 bg-surface"><div class="flex flex-col w-full pb-8">
+<!-- Search & Filter Header Toolbar -->
+<div class="px-margin-mobile pt-3 pb-2 flex flex-col gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="flex-1 flex items-center bg-surface-container-low rounded-full px-3.5 py-2.5 shadow-sm">
+<span class="material-symbols-outlined text-outline text-[20px]">search</span>
+<input class="bg-transparent w-full ml-2 text-body-sm font-body-sm text-on-surface placeholder:text-outline focus:outline-none" placeholder="Search your rooms, topics, forums..." type="search"/>
+<button aria-label="Voice search" class="text-outline-variant hover:text-primary transition-colors flex items-center" type="button">
+<span class="material-symbols-outlined text-[18px]">mic</span>
+</button>
+</div>
+<button aria-label="Filter Rooms and Topics" class="w-10 h-10 rounded-full bg-surface-container-low flex items-center justify-center text-on-surface-variant hover:bg-surface-container hover:text-primary transition-colors shrink-0 shadow-sm" id="filter-toggle-btn" type="button">
+<span class="material-symbols-outlined text-[20px]">tune</span>
+</button>
+</div>
+<!-- Quick Filter Chip Row -->
+<div class="flex items-center gap-space-xs overflow-x-auto py-1 -mx-margin-mobile px-margin-mobile">
+<button class="shrink-0 px-3 py-1.5 rounded-full bg-primary text-on-primary font-label-md text-label-md flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[14px]">checklist</span> All My Rooms
+      </button>
+<button class="shrink-0 px-3 py-1.5 rounded-full bg-surface-container-low text-on-surface-variant hover:bg-surface-container font-label-md text-label-md transition-colors">
+        Admin Roles (3)
+      </button>
+<button class="shrink-0 px-3 py-1.5 rounded-full bg-surface-container-low text-on-surface-variant hover:bg-surface-container font-label-md text-label-md transition-colors">
+        Active Voice Lounges (4)
+      </button>
+<button class="shrink-0 px-3 py-1.5 rounded-full bg-surface-container-low text-on-surface-variant hover:bg-surface-container font-label-md text-label-md transition-colors">
+        Invites Pending (2)
+      </button>
+</div>
+</div>
+<!-- Your Shortcuts & Joined Rooms (Horizontal Scroll Pill/Avatar Tray) -->
+<div class="pt-3 pb-4">
+<div class="px-margin-mobile flex items-center justify-between mb-2.5">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[18px]">push_pin</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Your Pinned Shortcuts</h2>
+</div>
+<button class="font-label-md text-label-md text-primary font-semibold hover:underline">Edit</button>
+</div>
+<div class="flex items-center gap-space-sm overflow-x-auto px-margin-mobile pb-2">
+<!-- Shortcut Pill 1 -->
+<a class="shrink-0 flex items-center gap-2.5 bg-surface-container-low hover:bg-surface-container rounded-full pl-1.5 pr-3 py-1.5 shadow-sm transition-all group" href="#">
+<div class="relative w-8 h-8 rounded-full overflow-hidden shrink-0">
+<img class="w-full h-full object-cover" data-alt="Close up photography of vibrant green tropical palm leaves and succulent plants inside a warm solar-lit glass greenhouse with natural ambient reflections." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDL7G8J88CYz5K_MnnDLGk7FJ74ipQ_UFheJMFow9DNFVCOmc6tOHg-NfYoUSGiX4lu-YQpqSaLonyGf3PyXV4s8lAlusRzd0GCMH2JDm-rOd7r29uLGPU0cDv8wDZ4xFAMn2t9CeTQP3_Ku5XvsdpC_mhljmqV6EkXFPdcp8ThOGNcvwUpXqi5YzgpeaTK24zZnfSz6DC6Cv1RqoH1T7-imek7obSnkrcQnluacK70pUzuquur_Ynd"/>
+<span class="absolute bottom-0 right-0 w-2 h-2 rounded-full bg-primary ring-1 ring-surface"></span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold max-w-[130px] truncate">Eco-Friendly Living</span>
+<span class="font-label-sm text-label-sm text-secondary font-bold">12 new posts</span>
+</div>
+</a>
+<!-- Shortcut Pill 2 -->
+<a class="shrink-0 flex items-center gap-2.5 bg-surface-container-low hover:bg-surface-container rounded-full pl-1.5 pr-3 py-1.5 shadow-sm transition-all group" href="#">
+<div class="relative w-8 h-8 rounded-full overflow-hidden shrink-0">
+<img class="w-full h-full object-cover" data-alt="Sleek glowing futuristic microchip processor and robotic circuits illuminated with soft purple and indigo neon trace lines on dark matte silicon." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA7L5_hC16ntTgIwkPnGaDL3onwQq2SeceEwMuXiIv0zHxxGyzORNlHd2Jufbb73y4bWehzFKlLXx_TD5w9DdEYla0qy29m44WUjQBSZCbFGxZSCvD-KNFrrJtfUPg7CjnSMaVQcx7q1ofIkWE1c9obm-_KfCK8q7pHZ5Sq2OzWLtGhZFNKTupJ-1R1AqPfxYIO4ffovJwBTBVQtrGpsv4u3nV7B4BwldsYQPBiHgjlD-RQI6IHypxQ"/>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold max-w-[130px] truncate">Robotics &amp; AI</span>
+<span class="font-label-sm text-label-sm text-primary font-bold">5 unread</span>
+</div>
+</a>
+<!-- Shortcut Pill 3 -->
+<a class="shrink-0 flex items-center gap-2.5 bg-surface-container-low hover:bg-surface-container rounded-full pl-1.5 pr-3 py-1.5 shadow-sm transition-all group" href="#">
+<div class="relative w-8 h-8 rounded-full overflow-hidden shrink-0">
+<img class="w-full h-full object-cover" data-alt="Deep space astronomical view of a radiant spiral galaxy stellar dust cloud swirling with cobalt blue and bright ultraviolet stars." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCBDndGjPBqDJ_aEqGThuyXEV7A73YeBC0fZ3F06k_XskXjAwTUtZWqxMN2dJW5gCFhQ3Bv277k46LVfeytqi1LF_jXduhs_kc8Qvw81pjQqFkmwASLu8BzQBqe7qC4cByN2M8xnONkBJsMNb0y6unrVf8qe-57fHUS0uAmbtPPCJ7qdWsTV3hZWlpw6KjzNySIo2fDU9I4fyi0_WdZB3lp4LrVHD-EKG4RmUqvPTJACuKRjQgWZar-"/>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold max-w-[130px] truncate">Earth &amp; Galaxy</span>
+<span class="font-label-sm text-label-sm text-outline">Quiet</span>
+</div>
+</a>
+<!-- Shortcut Pill 4 -->
+<a class="shrink-0 flex items-center gap-2.5 bg-surface-container-low hover:bg-surface-container rounded-full pl-1.5 pr-3 py-1.5 shadow-sm transition-all group" href="#">
+<div class="relative w-8 h-8 rounded-full overflow-hidden shrink-0">
+<img class="w-full h-full object-cover" data-alt="Minimalist architectural college campus library with natural light wooden study desks students reading modern books and gentle warm sunlight." src="https://lh3.googleusercontent.com/aida-public/AB6AXuClUnn_LTqY87v357bzNVm1O_HMcrIbm5dETx-nvjMGssD5SbrPE1-_EPRI5z2WjOkmVxowG5bpn9SzKqFO5XTDk4ysPHSpxlf9A6Ujb9GP3L4YTnh6_fsNTIygXzjBBMba_U-y-SwLB70FTiHj1MP-25y8cidYqeBzOHWaIc86f8mGXcKvub6t37TjW-Fgm7we_iP7XGwr_l2iE0_Tw7ofl6MXWoBqnMm4w7QK4jek02aMjn5d7Ig3"/>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold max-w-[130px] truncate">Dorm Hacks 101</span>
+<span class="font-label-sm text-label-sm text-tertiary font-bold">Voice Live</span>
+</div>
+</a>
+</div>
+</div>
+<!-- Action Grid / Navigation Hub Cards -->
+<div class="px-margin-mobile py-2">
+<div class="grid grid-cols-2 gap-space-sm">
+<!-- Create New Room (Gradient Highlight Card) -->
+<button class="flex flex-col justify-between p-3.5 rounded-xl bg-gradient-to-br from-primary via-primary to-primary-container text-on-primary shadow-md hover:opacity-95 transition-all text-left relative overflow-hidden group" onclick="openCreateModal()" type="button">
+<div class="absolute -right-2 -bottom-2 w-16 h-16 rounded-full bg-white/10 blur-xl pointer-events-none"></div>
+<div class="w-9 h-9 rounded-full bg-white/20 flex items-center justify-center mb-3">
+<span class="material-symbols-outlined text-[20px] text-white">add_circle</span>
+</div>
+<div>
+<span class="font-headline-sm text-[16px] leading-tight font-bold block mb-0.5">Create Room</span>
+<span class="font-label-sm text-label-sm text-primary-fixed-dim block">Public or syndicate hub</span>
+</div>
+</button>
+<!-- Discover Hubs -->
+<a class="flex flex-col justify-between p-3.5 rounded-xl bg-surface-container-low hover:bg-surface-container shadow-sm transition-all text-left group" href="#">
+<div class="w-9 h-9 rounded-full bg-primary/10 text-primary flex items-center justify-center mb-3 group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[20px]">explore</span>
+</div>
+<div>
+<span class="font-headline-sm text-[16px] leading-tight font-bold text-on-surface block mb-0.5">Discover Hubs</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Trending peer groups</span>
+</div>
+</a>
+<!-- Room Activity & Mentions -->
+<a class="flex flex-col justify-between p-3.5 rounded-xl bg-surface-container-low hover:bg-surface-container shadow-sm transition-all text-left group" href="#">
+<div class="w-9 h-9 rounded-full bg-secondary-fixed text-on-secondary-fixed-variant flex items-center justify-center mb-3 relative">
+<span class="material-symbols-outlined text-[20px]">notifications_active</span>
+<span class="absolute top-0 right-0 w-2.5 h-2.5 rounded-full bg-secondary"></span>
+</div>
+<div>
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-[16px] leading-tight font-bold text-on-surface mb-0.5">Feed Activity</span>
+<span class="px-1.5 py-0.5 rounded-full bg-secondary/15 text-secondary font-label-sm text-[10px] font-bold">14</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Mentions &amp; invites</span>
+</div>
+</a>
+<!-- Shared Links & Bookmarks -->
+<a class="flex flex-col justify-between p-3.5 rounded-xl bg-surface-container-low hover:bg-surface-container shadow-sm transition-all text-left group" href="#">
+<div class="w-9 h-9 rounded-full bg-tertiary-fixed text-on-tertiary-fixed-variant flex items-center justify-center mb-3">
+<span class="material-symbols-outlined text-[20px]">bookmark</span>
+</div>
+<div>
+<span class="font-headline-sm text-[16px] leading-tight font-bold text-on-surface block mb-0.5">Saved Links</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Archived notes &amp; PDF</span>
+</div>
+</a>
+</div>
+</div>
+<!-- Manage & Created by You Section -->
+<div class="px-margin-mobile pt-5 pb-2">
+<div class="flex items-center justify-between mb-3">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[19px]">shield_person</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Manage &amp; Created by You</h2>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-surface-container font-label-sm text-label-sm text-primary font-bold">3 Rooms</span>
+</div>
+<div class="flex flex-col gap-space-sm">
+<!-- Admin Room 1 -->
+<div class="p-3.5 rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-3">
+<div class="flex items-start justify-between gap-3">
+<div class="flex items-center gap-3 min-w-0">
+<div class="relative w-11 h-11 rounded-lg overflow-hidden shrink-0">
+<img class="w-full h-full object-cover" data-alt="Editorial close-up of a modern coding monitor displaying vibrant clean colorful syntax diagrams alongside neon purple interface elements." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC8AEF1-Nx0KWRZ0p8-zZ630sxciVyz05bkMoAv8CfInGaFWbKJ8olJv1aX6ct2daChfNWdmVsyQvEKgYRJt-I_waD8G0LFrBhi248bpjpUehu-FYa4Lmufg6uFKbTSKIkf8Pc-fe6NjmikjLr3b49pBWUtOYYzBpq0CwodQWnS601t7fyyuPhTamwYWBPaM5nVTg88gkFyOsohQn2C2MTUbwkY3OxhwfY5shQqRgzWMHcodhIEMskS"/>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-headline-sm text-[15px] font-bold text-on-surface truncate">Fullstack Builders Cohort</span>
+<span class="material-symbols-outlined text-on-surface-variant text-[15px]" title="Private Syndicate">lock</span>
+</div>
+<div class="flex items-center gap-2 text-on-surface-variant font-label-sm text-label-sm">
+<span>Private Syndicate</span>
+<span>•</span>
+<span>142 builders</span>
+</div>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-[10px] font-bold shrink-0">
+            ADMIN
+          </span>
+</div>
+<div class="flex items-center justify-between pt-2">
+<div class="flex items-center gap-1 text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[16px] text-primary">pending_actions</span>
+<span>4 requests pending</span>
+</div>
+<div class="flex items-center gap-1.5">
+<button class="px-2.5 py-1 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md font-semibold transition-colors flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px]">settings</span> Manage
+            </button>
+<button aria-label="Share syndicate link" class="w-8 h-8 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface-variant flex items-center justify-center transition-colors">
+<span class="material-symbols-outlined text-[16px]">share</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Admin Room 2 -->
+<div class="p-3.5 rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-3">
+<div class="flex items-start justify-between gap-3">
+<div class="flex items-center gap-3 min-w-0">
+<div class="relative w-11 h-11 rounded-lg overflow-hidden shrink-0">
+<img class="w-full h-full object-cover" data-alt="Top down flatlay of green leaves botanist notebook paper magnifying glass and botanical seedling specimens on soft slate surface." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAHa411jI6Gz7z6_7zNiLO1Y8ZaATzystb506h-a4LeVFF7FNX5Fj-nTORGUynfDwBWZDhedJN50w1WOvBmEcMjImFcm5oD23mIJOOx4Y95yvbsA3U0jEJhv4WISUaSJjwPXxAOf89zEX5asgGBr12_AogQgfHwyY1amAdwM33yjVldaiiBuAhpqJBRyoM9L61zO5CGWsVY6-7lO-3IjZvIjOjqi_EA6qARFCC8WBBvKXY7O5VJvos_"/>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-headline-sm text-[15px] font-bold text-on-surface truncate">Renewable Energy Research</span>
+<span class="material-symbols-outlined text-outline text-[15px]" title="Public Room">public</span>
+</div>
+<div class="flex items-center gap-2 text-on-surface-variant font-label-sm text-label-sm">
+<span>Public Forum</span>
+<span>•</span>
+<span>1.8k members</span>
+</div>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-[10px] font-bold shrink-0">
+            CREATOR
+          </span>
+</div>
+<div class="flex items-center justify-between pt-2">
+<div class="flex items-center gap-1.5 text-on-surface-variant font-body-sm text-body-sm">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span>18 active right now</span>
+</div>
+<div class="flex items-center gap-1.5">
+<button class="px-2.5 py-1 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md font-semibold transition-colors flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px]">record_voice_over</span> Lounge
+            </button>
+<button aria-label="Share room link" class="w-8 h-8 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface-variant flex items-center justify-center transition-colors">
+<span class="material-symbols-outlined text-[16px]">share</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Browse by Domains & Categories Header -->
+<div class="px-margin-mobile pt-6 pb-2">
+<div class="flex items-center justify-between mb-1">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[20px]">category</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Explore Hubs by Category</h2>
+</div>
+<a class="font-label-md text-label-md text-primary font-bold hover:underline" href="#">View All</a>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-3">Verified communities, peer labs, and active student forums.</p>
+</div>
+<!-- Domain 1: Environment & Planet -->
+<div class="px-margin-mobile py-2">
+<div class="flex items-center justify-between mb-2.5">
+<div class="flex items-center gap-1.5">
+<span class="px-2 py-0.5 rounded-md bg-secondary-fixed text-on-secondary-fixed-variant font-label-sm text-[10px] font-bold uppercase tracking-wider">
+          Planet &amp; Climate
+        </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">14 Active Hubs</span>
+</div>
+</div>
+<!-- Featured Room Card 1 -->
+<div class="rounded-xl bg-surface-container-lowest shadow-sm overflow-hidden mb-4">
+<div class="relative h-24 w-full overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Lush green panoramic mountain forest canopy bathed in golden sunrise mist with rich natural foliage in soft cinematic lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCY3xbDFcUoKAtqYPzdjsYyqDks-fel0aUlcWbXiLkwxNTri-i7J5QJZkf7ozRzwD2TmncjStsy6iKzQMa_hrLmFKyDrjlmrwwSxhxYROGNNor1LHLrTg9dEIrtSBOMglCwewqcLbmWGYZZ1HY1HAQUf5WyMFnNV7v1vo0tYZNTsLcJmTMw2JKvdl6BCeK0qdcC4R6Gd3mF1XLxAkiHqvJvAOCaIqaHsktiTkDwV5IYO157AmBTcCs2"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+<div class="absolute bottom-2.5 left-3 flex items-center gap-1 text-white font-label-sm text-label-sm bg-black/40 backdrop-blur-md px-2 py-0.5 rounded-full">
+<span class="material-symbols-outlined text-[13px] text-white">public</span>
+<span>Public Community</span>
+</div>
+<div class="absolute top-2.5 right-3">
+<button aria-label="Bookmark room" class="w-7 h-7 rounded-full bg-white/80 backdrop-blur-md text-on-surface flex items-center justify-center hover:bg-white transition-colors">
+<span class="material-symbols-outlined text-[16px]">bookmark_border</span>
+</button>
+</div>
+</div>
+<div class="p-3.5 flex flex-col gap-2.5">
+<div class="flex items-start justify-between gap-2">
+<div>
+<h3 class="font-headline-sm text-[17px] font-bold text-on-surface leading-snug">Grow Trees &amp; Afforestation</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1">Global seedling swapping, urban re-wilding tactics &amp; satellite monitoring.</p>
+</div>
+</div>
+<div class="flex items-center gap-3 font-label-sm text-label-sm text-on-surface-variant">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-primary">group</span> 18.4k members
+          </span>
+<span>•</span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-tertiary">bolt</span> 45 posts/day
+          </span>
+</div>
+<div class="flex items-center justify-between pt-1">
+<div class="flex -space-x-1.5 overflow-hidden py-0.5">
+<img class="inline-block h-6 w-6 rounded-full object-cover ring-2 ring-surface-container-lowest" data-alt="Headshot portrait of a smiling young collegiate researcher wearing round glasses against a natural outdoor garden background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBpqi1L21bRhfveF7MBXQbGsBVxldCVGc6Mn_GEsddayH-QuyE5ccVsVI6AdVehiYnLdVaZ1VDqthNBI2hIOrKpz1Qy9E8jSVcaP_wd_Nr453m7T8aOgMWpWcMskSoILOryIt5PK2AzNllFvQgc5pajeMjwkaawjMYsh-kYLZY5cTylqsugCuVbbBV3hrF4UYCtqFSoju4PG_oYM0VyMbMLcxlt5wbCmOTSBS97CZJxqrTVOE3fU4xN"/>
+<img class="inline-block h-6 w-6 rounded-full object-cover ring-2 ring-surface-container-lowest" data-alt="Headshot of a friendly young environmental engineer wearing a linen shirt smiling outdoors." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCpZV2hT90w-hH8vfA4jvnXG5Kk_TY-sln29lCfmr45jDHS6qhGLo9442_j0G6rxxA3ipwfSD5x1KELSFdc8CMIZO-HNWjXKc4qaQaK78OrXAmGYMzgqdPTI16sRv0Mv6LKC-SonNVIZUz38iiwqwwbhhWauF0aICp8pUudUjGMb0qkYodqYQhceUv9bCabcz3HHI5yc2ryd5szRNJpiIdBmXSM2p-_RzQcvBKenl7hYDVxYMlvQC2j"/>
+<img class="inline-block h-6 w-6 rounded-full object-cover ring-2 ring-surface-container-lowest" data-alt="Headshot portrait of a cheerful university student with curly hair smiling warmly." src="https://lh3.googleusercontent.com/aida-public/AB6AXuALK2UyZ1JAq8mkyN8PmiUMXmh4AhskhrghWQ40csOGhKdVaJpvLqPqQMOw6wtXVr1m5Okc3hs7oElP0TUAqi3kSggNDVemYIpXIfpSdxr_6Ilmjnkm-pANwgrLcsozbO183j7orEa_myizL5iYcDPl_qaNYAwuJGf0zTKM4Zyh4ujCZ4s_qnlr20bwsHT5WoUkP90dn5Zw5s95vyf3Szc_igy0sge_2hRQx9ZIZt4u6xXAq_uh0iIu"/>
+<span class="flex items-center justify-center h-6 w-6 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-[9px] font-bold ring-2 ring-surface-container-lowest">+8 friends</span>
+</div>
+<div class="flex items-center gap-2">
+<button aria-label="Invite Friends" class="px-2 py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-primary transition-colors flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">person_add</span>
+</button>
+<button aria-label="Share Room Link" class="px-2 py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-primary transition-colors flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">ios_share</span>
+</button>
+<button class="px-4 py-1.5 rounded-full bg-primary text-on-primary font-label-md text-label-md font-bold shadow-sm hover:opacity-95 transition-opacity">
+              Join Room
+            </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Domain 2: Science & Tech -->
+<div class="px-margin-mobile py-2">
+<div class="flex items-center justify-between mb-2.5">
+<div class="flex items-center gap-1.5">
+<span class="px-2 py-0.5 rounded-md bg-surface-container-highest text-on-primary-fixed-variant font-label-sm text-[10px] font-bold uppercase tracking-wider">
+          Tech &amp; AI
+        </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">28 Active Hubs</span>
+</div>
+</div>
+<!-- Featured Room Card 2 (Private Room) -->
+<div class="rounded-xl bg-surface-container-lowest shadow-sm overflow-hidden mb-4">
+<div class="relative h-24 w-full overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Abstract dynamic 3D rendering of interconnected neural synapses glowing in vibrant electric violet and soft lavender floating over dark fluid canvas." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB8D5HUzPsDt4WAp2Shf1c8PrjjQwdYullZZC89mTKWpk8POpG5t61g-4_JJNf1dNZtkl5KqFN--tWKiuIzdET0tWwcENqkillJFQRCLZZPdV-dXhEaRaWdDCEYU-Yjq_xleruMTSvxgHCuMETvTBFQDsUjo9-30nFB6csm8KhHicdJB3-XMNrtvtE3U6PRIlQx2u1tVop0EfkU343R7qZSYPh5ACbO3qwJLX08ZCTV5VPU7PFahWxt"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+<div class="absolute bottom-2.5 left-3 flex items-center gap-1 text-white font-label-sm text-label-sm bg-black/40 backdrop-blur-md px-2 py-0.5 rounded-full">
+<span class="material-symbols-outlined text-[13px] text-white">lock</span>
+<span>Private Syndicate</span>
+</div>
+</div>
+<div class="p-3.5 flex flex-col gap-2.5">
+<div>
+<h3 class="font-headline-sm text-[17px] font-bold text-on-surface leading-snug">Quantum &amp; Bio-AI Labs</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1">Synthesizing protein folding algorithms, quantum gates &amp; bio-computing.</p>
+</div>
+<div class="flex items-center gap-3 font-label-sm text-label-sm text-on-surface-variant">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-primary">diversity_3</span> 4.2k researchers
+          </span>
+<span>•</span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-secondary">verified_user</span> Verified Student ID Required
+          </span>
+</div>
+<div class="flex items-center justify-between pt-1">
+<div class="flex items-center gap-1 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-tertiary">lock_clock</span>
+<span>Manual Admin Review</span>
+</div>
+<div class="flex items-center gap-2">
+<button aria-label="Share Syndicate Link" class="px-2 py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-primary transition-colors flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">share</span>
+</button>
+<button class="px-3.5 py-1.5 rounded-full bg-surface-container-high hover:bg-surface-container text-on-surface font-label-md text-label-md font-bold shadow-sm transition-all flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px]">how_to_reg</span> Request Join
+            </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Domain 3: Student Life & Campus -->
+<div class="px-margin-mobile py-2">
+<div class="flex items-center justify-between mb-2.5">
+<div class="flex items-center gap-1.5">
+<span class="px-2 py-0.5 rounded-md bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-[10px] font-bold uppercase tracking-wider">
+          Campus &amp; Living
+        </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">32 Active Hubs</span>
+</div>
+</div>
+<!-- Featured Room Card 3 (Active Voice Lounge) -->
+<div class="rounded-xl bg-surface-container-lowest shadow-sm overflow-hidden mb-4">
+<div class="relative h-24 w-full overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Cozy dorm kitchen counter with colorful fresh vegetables cutting boards stainless steel prep bowls and warm pendant lights." src="https://lh3.googleusercontent.com/aida-public/AB6AXuArG31wbwTEkG0MgEGX0T9QB6BcnieKOLNQTa54fv8_BgNoJa0cCdkuSBEXDG00mnVBCRlo5n6B29oF5BkBk-FiRgkb9Oi7yGML2rNIyw2ZN10bwUF2sWTnjPBH-w5QhJjG_RKgcgilHxN4Ng9ai0bYn6tOLSmkum7S8RUkuqrdVR8E2VGa0EJSXAQAZtbX9u_GuZRPxySPUc6H6kqwo_2xjd3X8_GOTe4AsqCpRX0S9_PWYWwWxspD"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+<div class="absolute bottom-2.5 left-3 flex items-center gap-1.5 text-white font-label-sm text-label-sm bg-secondary/85 backdrop-blur-md px-2.5 py-0.5 rounded-full">
+<span class="material-symbols-outlined text-[13px] text-white">graphic_eq</span>
+<span class="font-bold">Voice Lounge Active (14)</span>
+</div>
+</div>
+<div class="p-3.5 flex flex-col gap-2.5">
+<div>
+<h3 class="font-headline-sm text-[17px] font-bold text-on-surface leading-snug">Cooking Tips &amp; Dorm Hacks</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1">Quick microwave gourmet, 15-minute meal prep, budget grocery splitting.</p>
+</div>
+<div class="flex items-center gap-3 font-label-sm text-label-sm text-on-surface-variant">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-primary">groups</span> 9.6k foodies
+          </span>
+<span>•</span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-tertiary">mic</span> Live Q&amp;A Session
+          </span>
+</div>
+<div class="flex items-center justify-between pt-1">
+<div class="flex items-center gap-1 text-on-surface-variant font-label-sm text-label-sm">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span>Host: Chef Leo (Dorm 4)</span>
+</div>
+<div class="flex items-center gap-2">
+<button aria-label="Invite Friends" class="px-2 py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-primary transition-colors flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">person_add</span>
+</button>
+<button class="px-3.5 py-1.5 rounded-full bg-secondary-container text-on-secondary-container font-label-md text-label-md font-bold shadow-sm hover:opacity-95 transition-all flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">headset</span> Listen In
+            </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Interactive Modal / Slide-up Overlay for Creating a Room -->
+<div aria-labelledby="modal-title" aria-modal="true" class="fixed inset-0 z-50 bg-black/50 backdrop-blur-sm hidden items-end justify-center transition-all p-0" id="create-room-modal" role="dialog">
+<div class="w-full max-w-lg bg-surface rounded-t-2xl shadow-2xl p-margin-mobile flex flex-col gap-space-md max-h-[751px] overflow-y-auto" onclick="event.stopPropagation()">
+<div class="flex items-center justify-between border-b pb-2">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-full bg-primary/10 text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">group_add</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold" id="modal-title">Create Community Room</h3>
+</div>
+<button class="w-8 h-8 rounded-full bg-surface-container-low text-on-surface-variant hover:text-on-surface flex items-center justify-center" onclick="closeCreateModal()" type="button">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<div class="flex flex-col gap-space-sm">
+<div>
+<label class="font-label-md text-label-md text-on-surface font-semibold block mb-1">Room or Syndicate Name</label>
+<input class="w-full px-3.5 py-2.5 rounded-xl bg-surface-container-low text-body-sm font-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:ring-2 focus:ring-primary" placeholder="e.g. Stanford AI Lab Group, Solar Punk Syndicate" type="text"/>
+</div>
+<div>
+<label class="font-label-md text-label-md text-on-surface font-semibold block mb-1">Select Domain</label>
+<select class="w-full px-3.5 py-2.5 rounded-xl bg-surface-container-low text-body-sm font-body-sm text-on-surface focus:outline-none">
+<option>Tech &amp; Artificial Intelligence</option>
+<option>Environment &amp; Climate Action</option>
+<option>Campus Life &amp; Dorm Syndicate</option>
+<option>Deep Science &amp; Biotechnology</option>
+<option>Design &amp; Architecture</option>
+</select>
+</div>
+<div>
+<label class="font-label-md text-label-md text-on-surface font-semibold block mb-1">Privacy Mode</label>
+<div class="grid grid-cols-2 gap-space-sm">
+<label class="flex flex-col p-3 rounded-xl bg-surface-container-low has-[:checked]:bg-primary-fixed has-[:checked]:text-on-primary-fixed cursor-pointer transition-colors">
+<div class="flex items-center justify-between mb-1">
+<span class="material-symbols-outlined text-[18px]">public</span>
+<input checked="" class="accent-primary" name="privacy-tier" type="radio" value="public"/>
+</div>
+<span class="font-headline-sm text-[14px] font-bold">Public Group</span>
+<span class="font-label-sm text-label-sm opacity-80">Anyone can discover and join</span>
+</label>
+<label class="flex flex-col p-3 rounded-xl bg-surface-container-low has-[:checked]:bg-primary-fixed has-[:checked]:text-on-primary-fixed cursor-pointer transition-colors">
+<div class="flex items-center justify-between mb-1">
+<span class="material-symbols-outlined text-[18px]">lock</span>
+<input class="accent-primary" name="privacy-tier" type="radio" value="private"/>
+</div>
+<span class="font-headline-sm text-[14px] font-bold">Private Syndicate</span>
+<span class="font-label-sm text-label-sm opacity-80">Approval needed to view</span>
+</label>
+</div>
+</div>
+<div>
+<label class="font-label-md text-label-md text-on-surface font-semibold block mb-1">Room Description &amp; Ground Rules</label>
+<textarea class="w-full px-3.5 py-2.5 rounded-xl bg-surface-container-low text-body-sm font-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:ring-2 focus:ring-primary" placeholder="What will members research, collaborate on, or brainstorm here?" rows="2"></textarea>
+</div>
+</div>
+<div class="flex items-center gap-space-sm pt-2">
+<button class="flex-1 py-2.5 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md font-bold transition-colors" onclick="closeCreateModal()" type="button">
+          Cancel
+        </button>
+<button class="flex-1 py-2.5 rounded-full bg-primary text-on-primary font-label-md text-label-md font-bold shadow-md hover:opacity-95 transition-opacity" onclick="confirmCreateRoom()" type="button">
+          Launch Room
+        </button>
+</div>
+</div>
+</div>
+<!-- Persistent Floating Trigger for Fast Room Creation -->
+<div class="fixed bottom-20 right-4 z-40">
+<button aria-label="Create Room shortcut" class="flex items-center gap-2 px-4 py-2.5 rounded-full bg-primary text-on-primary font-label-md text-label-md font-bold shadow-xl hover:scale-105 active:scale-95 transition-all" onclick="openCreateModal()" type="button">
+<span class="material-symbols-outlined text-[20px]">add</span>
+<span>Create Room</span>
+</button>
+</div>
+</div>
+<script>
+  function openCreateModal() {
+    const modal = document.getElementById('create-room-modal');
+    if (modal) {
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+    }
+  }
+
+  function closeCreateModal() {
+    const modal = document.getElementById('create-room-modal');
+    if (modal) {
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+    }
+  }
+
+  function confirmCreateRoom() {
+    closeCreateModal();
+    // Micro-toast or confirmation feedback
+    const toast = document.createElement('div');
+    toast.className = 'fixed bottom-24 left-1/2 -translate-x-1/2 z-50 bg-inverse-surface text-inverse-on-surface px-4 py-2 rounded-full font-label-md text-label-md shadow-lg flex items-center gap-2';
+    toast.innerHTML = '<span class="material-symbols-outlined text-[16px]">check_circle</span> New room initialized successfully!';
+    document.body.appendChild(toast);
+    setTimeout(() => toast.remove(), 2600);
+  }
+
+  // Filter toggle button micro-interaction
+  document.getElementById('filter-toggle-btn')?.addEventListener('click', function() {
+    this.classList.toggle('text-primary');
+    this.classList.toggle('bg-primary-fixed');
+  });
+
+  // Close modal when clicking outside on backdrop
+  document.getElementById('create-room-modal')?.addEventListener('click', function(e) {
+    if (e.target === this) {
+      closeCreateModal();
+    }
+  });
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/85 backdrop-blur-xl shadow-[0_-2px_12px_rgba(0,0,0,0.03)]" data-active-classes="text-primary font-bold"><div class="flex justify-around items-center h-16 px-space-xs"><a class="flex flex-col items-center justify-center gap-1 min-w-[56px] min-h-[44px] py-1 text-on-surface-variant hover:text-primary transition-colors" data-path="spark-community-and-learning-feed" href="#"><span class="material-symbols-outlined text-[22px]">dynamic_feed</span><span class="font-label-sm text-label-sm tracking-tight">Feed</span></a><a class="flex flex-col items-center justify-center gap-1 min-w-[56px] min-h-[44px] py-1 text-on-surface-variant hover:text-primary transition-colors" data-path="explore-interest-rooms-and-groups-hub" href="#"><span class="material-symbols-outlined text-[22px]">groups_2</span><span class="font-label-sm text-label-sm tracking-tight">Rooms</span></a><a class="flex flex-col items-center justify-center gap-1 min-w-[56px] min-h-[44px] py-1 text-on-surface-variant hover:text-primary transition-colors" data-path="live-streaming-and-brainstorming-hub" href="#"><span class="material-symbols-outlined text-[22px]">sensors</span><span class="font-label-sm text-label-sm tracking-tight">Live</span></a><a class="flex flex-col items-center justify-center gap-1 min-w-[56px] min-h-[44px] py-1 text-on-surface-variant hover:text-primary transition-colors" data-path="people-and-industrial-experts-directory" href="#"><span class="material-symbols-outlined text-[22px]">diversity_3</span><span class="font-label-sm text-label-sm tracking-tight">People</span></a><a class="relative flex flex-col items-center justify-center gap-1 min-w-[56px] min-h-[44px] py-1 text-on-surface-variant hover:text-primary transition-colors" data-path="direct-and-group-chat-messenger" href="#"><span class="relative flex items-center justify-center"><span class="material-symbols-outlined text-[22px]">chat_bubble</span><span class="absolute -top-1 -right-2 flex items-center justify-center min-w-[14px] h-3.5 px-0.5 rounded-full bg-primary text-on-primary font-label-sm text-[8px] font-bold leading-none">2</span></span><span class="font-label-sm text-label-sm tracking-tight">Chat</span></a></div></nav></body></html>

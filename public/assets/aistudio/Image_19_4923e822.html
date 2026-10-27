@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&family=Space+Grotesk:wght@600;700&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100..900&family=Space+Grotesk:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "inverse-primary": "#c6bfff", "tertiary-fixed": "#ffdcc5", "on-secondary-container": "#720b16", "on-surface-variant": "#474554", "error": "#ba1a1a", "on-background": "#131b2e", "on-secondary-fixed": "#410006", "surface": "#faf8ff", "tertiary": "#8c4600", "surface-variant": "#dae2fd", "primary": "#5341cd", "on-error": "#ffffff", "secondary-fixed-dim": "#ffb3b0", "on-tertiary": "#ffffff", "surface-dim": "#d2d9f4", "on-secondary-fixed-variant": "#881d24", "on-tertiary-container": "#fff5f1", "primary-container": "#6c5ce7", "surface-tint": "#5847d2", "on-surface": "#131b2e", "inverse-surface": "#283044", "primary-fixed": "#e4dfff", "tertiary-fixed-dim": "#ffb784", "on-secondary": "#ffffff", "secondary": "#a83639", "on-tertiary-fixed": "#301400", "background": "#faf8ff", "surface-container-low": "#f2f3ff", "on-primary-fixed-variant": "#4029ba", "on-tertiary-fixed-variant": "#713700", "outline-variant": "#c8c4d7", "surface-container-lowest": "#ffffff", "on-primary-fixed": "#160066", "secondary-container": "#ff7675", "surface-container": "#eaedff", "inverse-on-surface": "#eef0ff", "error-container": "#ffdad6", "on-error-container": "#93000a", "surface-container-high": "#e2e7ff", "on-primary-container": "#faf6ff", "surface-container-highest": "#dae2fd", "outline": "#787586", "secondary-fixed": "#ffdad8", "on-primary": "#ffffff", "tertiary-container": "#b05a03", "surface-bright": "#faf8ff", "primary-fixed-dim": "#c6bfff" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-xl": "2.5rem", "space-md": "1rem", "space-lg": "1.5rem", "margin-mobile": "1.25rem", "margin": "3rem", "space-xs": "0.25rem", "space-sm": "0.5rem", "gutter-mobile": "1rem", "gutter": "1.5rem" }, "fontFamily": { "headline-lg-mobile": ["Plus Jakarta Sans"], "label-lg": ["Space Grotesk"], "body-md": ["Plus Jakarta Sans"], "headline-xl": ["Plus Jakarta Sans"], "label-md": ["Space Grotesk"], "headline-sm": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "label-sm": ["Space Grotesk"], "headline-md": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "headline-xl-mobile": ["Plus Jakarta Sans"] }, "fontSize": { "headline-lg-mobile": ["26px", { "lineHeight": "34px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "label-lg": ["14px", { "lineHeight": "18px", "letterSpacing": "0.02em", "fontWeight": "700" }], "body-md": ["15px", { "lineHeight": "24px", "fontWeight": "400" }], "headline-xl": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.03em", "fontWeight": "800" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.03em", "fontWeight": "600" }], "headline-sm": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "label-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "600" }], "headline-md": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "700" }], "body-sm": ["13px", { "lineHeight": "20px", "fontWeight": "400" }], "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }], "headline-xl-mobile": ["34px", { "lineHeight": "42px", "letterSpacing": "-0.025em", "fontWeight": "800" }] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased flex flex-col min-h-screen"><header class="fixed top-0 inset-x-0 z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] pt-safe"><div class="h-20 px-gutter-mobile flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0 flex-1"><button aria-label="Back to Community Room" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface hover:bg-surface-container transition-colors shrink-0" onclick="history.back()"><span class="material-symbols-outlined text-[24px]">arrow_back</span></button><div class="relative shrink-0"><div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[20px]">person</span></div><span class="absolute bottom-0 right-0 w-3 h-3 bg-primary-container rounded-full ring-2 ring-surface"></span></div><div class="flex flex-col min-w-0 justify-center"><div class="flex items-center gap-1 min-w-0"><h1 class="font-headline-sm text-headline-sm text-on-surface font-bold truncate leading-tight">Direct Chat</h1><span class="material-symbols-outlined text-primary-container text-[18px] shrink-0" title="Verified Student Mentor">verified</span></div><div class="flex items-center gap-1.5 mt-0.5"><span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm"><span class="material-symbols-outlined text-[12px] text-tertiary-container">eco</span><span class="truncate max-w-[120px]">Active in #EcoFriendly</span></span></div></div></div><div class="flex items-center gap-1 shrink-0"><button aria-label="Start Audio Call" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface hover:bg-surface-container text-on-surface-variant hover:text-primary transition-colors"><span class="material-symbols-outlined text-[22px]">call</span></button><button aria-label="Start Video Call" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface hover:bg-surface-container text-on-surface-variant hover:text-primary transition-colors"><span class="material-symbols-outlined text-[22px]">videocam</span></button><button aria-label="Conversation Options" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface hover:bg-surface-container text-on-surface-variant transition-colors"><span class="material-symbols-outlined text-[22px]">more_vert</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0 ml-1"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex flex-col relative w-full pt-20 pb-safe bg-surface min-h-screen"><div class="flex flex-col w-full">
+<!-- Shared Community Context Ribbon -->
+<div class="px-margin-mobile pt-space-xs pb-space-sm">
+<div class="bg-surface-container-high rounded-xl p-space-sm shadow-sm flex flex-col gap-space-xs">
+<div class="flex items-center justify-between gap-space-sm">
+<div class="flex items-center gap-1.5 min-w-0">
+<span class="w-6 h-6 rounded-full bg-tertiary-fixed flex items-center justify-center text-on-tertiary-fixed shrink-0">
+<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">eco</span>
+</span>
+<span class="font-label-md text-label-md text-on-surface truncate">#Eco-Friendly Living • Study Room</span>
+</div>
+<button class="px-2.5 py-1 rounded-full bg-primary text-on-primary font-label-sm text-label-sm shrink-0 flex items-center gap-1 hover:opacity-95 active:scale-95 transition-all">
+<span>View Thread</span>
+<span class="material-symbols-outlined text-[13px]">arrow_outward</span>
+</button>
+</div>
+<div class="flex items-center justify-between pt-0.5">
+<div class="flex items-center gap-1.5 min-w-0">
+<span class="px-2 py-0.5 rounded-full bg-surface-container-lowest text-tertiary font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px]" style="font-variation-settings: 'FILL' 1;">verified</span>
+<span>🌿 Mutual Member</span>
+</span>
+<span class="text-on-surface-variant font-body-sm text-body-sm truncate">• 14 mutual friends in room</span>
+</div>
+<span class="font-label-sm text-label-sm text-primary font-bold shrink-0">Hall 6 Syndicate</span>
+</div>
+</div>
+</div>
+<!-- Peer Profile Quick Glance Card -->
+<div class="px-margin-mobile pb-space-sm">
+<div class="bg-surface-container-lowest rounded-xl p-space-sm shadow-sm flex items-center justify-between">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="relative w-11 h-11 rounded-full overflow-hidden shrink-0 bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Portrait of Sofia Chen, an Asian female environmental engineering student with friendly expression and modern spectacles on campus, soft cinematic collegiate lighting, natural warm tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuACSXuGakkOPwicLhzwgL0UuQ7aGy_rc5o5Og9ZXbwzPkYvc9zg79jHw9R31PuQWPC7Yt53X0aG5fK92NIO-PzSmI1V-NPy7kY14VdTaFXRgjUImf7M_LwbYPo5M9w_L1HHCGgsqiR4xF-GVr7JUBYtvq264Nqz1iQWrq45r2zrq0YQvUaLzv_oepfJCtb4sdM1n3boxS9e9e_Xssmv1A-Rgdimpi4-B-0F8b7_e37TQbPgk8DJfRXv"/>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold truncate">Sofia Chen</h2>
+<span class="px-1.5 py-0.2 rounded-full bg-primary-fixed text-on-primary-fixed-variant font-label-sm text-label-sm shrink-0">NUS '26</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">@sofia_eco • Environmental Engineering Mentor</p>
+</div>
+</div>
+<div class="flex items-center gap-1 shrink-0">
+<button class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-primary transition-colors" id="bookmarkPeerBtn">
+<span class="material-symbols-outlined text-[18px]">bookmark_add</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Message Stream Container -->
+<div class="flex flex-col px-margin-mobile space-y-space-md pb-space-lg" id="chatMessageStream">
+<!-- Date Badge -->
+<div class="flex items-center justify-center my-space-xs">
+<div class="px-3 py-1 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm shadow-sm">
+        Today, October 24
+      </div>
+</div>
+<!-- Inbound 1: Welcome & Recognition -->
+<div class="flex items-start gap-space-sm max-w-[88%] self-start">
+<div class="w-8 h-8 rounded-full overflow-hidden shrink-0 bg-surface-container mt-1">
+<img class="w-full h-full object-cover" data-alt="Close up profile avatar photo of collegiate student researcher Sofia Chen smiling outdoor campus courtyard, electric violet natural light tint." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDd-2HRDkc0AiJxY_IHL2YXF4C7ZwxLgpvnJ2XrUmnp3P7hy5cnU7XE0t4uVhOC01j1TbH5QNNXaBmehoayQONxaugHtJRPD19_4bdlttnpJZI7vDl3ZE_YvXU5W5GCX9JS7cy5RMTjGJPdEAuh27U0u0LcndnQT0cWR4SqCFVVDRlEF2XpD9_-pYEhxTK3gAYkVTxGyRSmMYHuiodzsIMnEpziY_FAuaxHCcCUWaygfQLdFmePr58v"/>
+</div>
+<div class="flex flex-col gap-1 min-w-0">
+<div class="bg-surface-container-lowest text-on-surface p-3.5 rounded-2xl rounded-tl-sm shadow-sm">
+<p class="font-body-md text-body-md leading-relaxed">
+            Hey! Saw your contribution in the <span class="font-semibold text-primary">#EcoFriendly</span> room on Bokashi fermentation starter cultures! 🌿✨
+          </p>
+</div>
+<div class="flex items-center gap-1 text-on-surface-variant font-label-sm text-label-sm pl-1">
+<span>10:14 AM</span>
+<span>•</span>
+<span>Sofia</span>
+</div>
+</div>
+</div>
+<!-- Inbound 2: Embedded Community Post Note Attachment -->
+<div class="flex items-start gap-space-sm max-w-[92%] self-start">
+<div class="w-8 h-8 rounded-full overflow-hidden shrink-0 bg-surface-container mt-1 opacity-0">
+<!-- Spacer for avatar align -->
+<span class="sr-only">Sofia</span>
+</div>
+<div class="flex flex-col gap-1 w-full min-w-0">
+<div class="bg-surface-container-lowest p-3 rounded-2xl rounded-tl-sm shadow-sm flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="px-2 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm flex items-center gap-1 font-bold">
+<span class="material-symbols-outlined text-[13px]" style="font-variation-settings: 'FILL' 1;">compost</span>
+              Shared Room Note
+            </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Hall 6 Lab</span>
+</div>
+<div class="flex gap-2.5 items-center bg-surface-container p-2 rounded-xl">
+<div class="w-16 h-16 rounded-lg overflow-hidden shrink-0 bg-surface-dim">
+<img class="w-full h-full object-cover" data-alt="Laboratory micro-composting container observation study with temperature probe, sustainable biology equipment, bright ambient lab light." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQhNzm67bkDEwT8xvWbvsZ1y6_geh6kbf-eAoPjZz_QziLwHFcS-wquNgELNR6MQq3_-s14GPqMZhHEreLBY8u6NFFk6Yr_Lj-mM3kgJH4eeUmwD6pqqcDufPkPpiQTDb5hU9yhl1CnPysQIC-_bP5lzaApwm3K5QMCmpC6P8CD5zx8OU9s-6KFbe-00sSwtkNIn1OAupYAg6lbKEOes2yX-yl3FreLTEFiUVy5ltSDMkUTf1M-9HX"/>
+</div>
+<div class="flex flex-col min-w-0 flex-1">
+<h4 class="font-label-md text-label-md text-on-surface font-bold line-clamp-2 leading-snug">
+                Field experiment notes: Urban micro-composting in student dorms
+              </h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate mt-0.5">
+                Aerobic test matrix • Singapore climate
+              </p>
+</div>
+</div>
+<div class="flex items-center justify-between pt-1">
+<div class="flex items-center gap-3 text-on-surface-variant font-label-sm text-label-sm">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-secondary-container" style="font-variation-settings: 'FILL' 1;">favorite</span>
+                48 likes
+              </span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">comment</span>
+                19 replies
+              </span>
+</div>
+<a class="font-label-sm text-label-sm text-primary font-bold hover:underline flex items-center gap-0.5" href="#">
+<span>View in Room</span>
+<span class="material-symbols-outlined text-[12px]">chevron_right</span>
+</a>
+</div>
+</div>
+<span class="text-on-surface-variant font-label-sm text-label-sm pl-1">10:15 AM</span>
+</div>
+</div>
+<!-- Outbound 1: User Response with Status Check -->
+<div class="flex items-start gap-space-sm max-w-[88%] self-end flex-row-reverse">
+<div class="w-8 h-8 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center shrink-0 mt-1 shadow-sm font-label-sm text-label-sm font-bold">
+        YOU
+      </div>
+<div class="flex flex-col gap-1 items-end min-w-0">
+<div class="bg-primary text-on-primary p-3.5 rounded-2xl rounded-tr-sm shadow-md">
+<p class="font-body-md text-body-md leading-relaxed">
+            Thanks Sofia! We just ran the second aerobic batch today in Hall 6. I reviewed your mycorrhizal dataset too—really impressive data curve! 📈
+          </p>
+</div>
+<div class="flex items-center gap-1.5 text-on-surface-variant font-label-sm text-label-sm pr-1">
+<span>10:18 AM</span>
+<span class="inline-flex items-center text-primary-container" title="Read by Sofia">
+<span class="material-symbols-outlined text-[15px]">done_all</span>
+</span>
+</div>
+</div>
+</div>
+<!-- Inbound 3: Interactive Voice Waveform Message -->
+<div class="flex items-start gap-space-sm max-w-[88%] self-start">
+<div class="w-8 h-8 rounded-full overflow-hidden shrink-0 bg-surface-container mt-1">
+<img class="w-full h-full object-cover" data-alt="Portrait avatar Sofia Chen, environmental engineering peer smiling softly, academic modern photography aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBVuYYPCJgIk6IDURAuwvDem5nbBbpV-Jn4NH1WrAb0hapiEvAFpeAHJmOZ3loLYAPFB_HZJSz7m6MoltcPy0bzY1wbtfssGMkXEQJ6wlH3mV-ST17kxS-A8GqURz_4kE4cPgXHfjOYH5YXYFIchyi87jY5KHy7Awa2xB6c3qSkCu4-D88yMQ9ftFdyJv7dvaKDocdg_Cx3BlvDqoZGyhxUalXREirn5jzxYjiI7dGOjXq6LJmhWBJX"/>
+</div>
+<div class="flex flex-col gap-1 min-w-0 w-full">
+<div class="bg-surface-container-lowest text-on-surface p-3.5 rounded-2xl rounded-tl-sm shadow-sm flex flex-col gap-2">
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-tertiary-container">graphic_eq</span>
+              Voice memo on bioreactor sensor setup
+            </span>
+<span class="font-bold text-on-surface">0:42</span>
+</div>
+<!-- Waveform Player Controller -->
+<div class="flex items-center gap-2.5 pt-1">
+<button aria-label="Play Voice Memo" class="w-9 h-9 rounded-full bg-primary text-on-primary flex items-center justify-center shrink-0 hover:bg-primary-container transition-all active:scale-95 shadow-sm" id="voicePlayBtn">
+<span class="material-symbols-outlined text-[18px]" id="playIcon">play_arrow</span>
+</button>
+<!-- Simulated Waveform Bars -->
+<div class="flex items-center gap-1 flex-1 h-8 px-1 overflow-hidden" id="waveformBars">
+<div class="w-1 bg-primary rounded-full h-3"></div>
+<div class="w-1 bg-primary rounded-full h-5"></div>
+<div class="w-1 bg-primary rounded-full h-7"></div>
+<div class="w-1 bg-primary rounded-full h-4"></div>
+<div class="w-1 bg-primary rounded-full h-6"></div>
+<div class="w-1 bg-primary rounded-full h-8"></div>
+<div class="w-1 bg-primary rounded-full h-5"></div>
+<div class="w-1 bg-primary rounded-full h-3"></div>
+<div class="w-1 bg-surface-variant rounded-full h-6"></div>
+<div class="w-1 bg-surface-variant rounded-full h-4"></div>
+<div class="w-1 bg-surface-variant rounded-full h-7"></div>
+<div class="w-1 bg-surface-variant rounded-full h-3"></div>
+<div class="w-1 bg-surface-variant rounded-full h-5"></div>
+<div class="w-1 bg-surface-variant rounded-full h-4"></div>
+<div class="w-1 bg-surface-variant rounded-full h-6"></div>
+<div class="w-1 bg-surface-variant rounded-full h-2"></div>
+<div class="w-1 bg-surface-variant rounded-full h-5"></div>
+<div class="w-1 bg-surface-variant rounded-full h-3"></div>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-1 text-on-surface-variant font-label-sm text-label-sm pl-1">
+<span>10:21 AM</span>
+<span>•</span>
+<span>Audio memo</span>
+</div>
+</div>
+</div>
+<!-- Outbound 2: Shared Rich URL Syndicate Card -->
+<div class="flex items-start gap-space-sm max-w-[90%] self-end flex-row-reverse">
+<div class="w-8 h-8 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center shrink-0 mt-1 shadow-sm font-label-sm text-label-sm font-bold">
+        YOU
+      </div>
+<div class="flex flex-col gap-1 items-end min-w-0 w-full">
+<!-- Bubble Shell -->
+<div class="bg-primary text-on-primary p-3 rounded-2xl rounded-tr-sm shadow-md flex flex-col gap-2 w-full">
+<p class="font-body-md text-body-md">
+            Here's the open documentation link for the IoT probe calibration we talked about:
+          </p>
+<!-- Rich Link Bookmark Component -->
+<div class="bg-surface-container-lowest text-on-surface rounded-xl p-2.5 shadow-sm flex flex-col gap-1.5">
+<div class="flex items-center gap-1.5 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px] text-primary">link</span>
+<span class="truncate">spark.edu/p/carbon-reduction-v1.4</span>
+</div>
+<div class="flex items-start justify-between gap-2">
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md font-bold text-on-surface truncate">Carbon Capture Protocol & Dataset</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5 line-clamp-1">Open-source peer methodology by Environmental Syndicate</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed-variant font-label-sm text-label-sm font-bold shrink-0">v1.4</span>
+</div>
+<div class="pt-1 flex items-center gap-2">
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm">#CarbonBlueprints</span>
+<span class="text-tertiary font-label-sm text-label-sm font-bold">Shared Resource</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-1.5 text-on-surface-variant font-label-sm text-label-sm pr-1">
+<span>10:24 AM</span>
+<span class="inline-flex items-center text-primary-container">
+<span class="material-symbols-outlined text-[15px]">done_all</span>
+</span>
+</div>
+</div>
+</div>
+<!-- Inbound Typing Indicator Micro-interaction -->
+<div class="flex items-center gap-space-sm self-start">
+<div class="w-8 h-8 rounded-full overflow-hidden shrink-0 bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Small thumbnail avatar of peer Sofia Chen typing live in educational chat app." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCYgE0ClT8_-flEumsKJWIxMZqMKQGAsI9yxzIcM6RYenbHfIYubwVcjUSCeifuH435tB0SgRp4vXmpAJthbGFfR5vQP843FxbOuuy5B0ElH2ZWmGTQvEzBH8kDEiM2rgIGj6WYqYBaMSkCUag751vYOHNPwvM7qAHleRSM67HqrJamJYqyafYm_iApzlyxrC3vB-B9lxQiykBHgH_o8_ERFzr4tIE0YuK6thu1-yBYkT8o2IK80xeH"/>
+</div>
+<div class="bg-surface-container-lowest text-on-surface-variant px-3 py-2 rounded-2xl rounded-tl-sm shadow-sm flex items-center gap-2">
+<div class="flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse delay-100"></span>
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse delay-200"></span>
+</div>
+<span class="font-label-sm text-label-sm">Sofia is typing...</span>
+</div>
+</div>
+</div>
+<!-- Interactive Action Suggestion Chips Bar -->
+<div class="px-margin-mobile pt-space-xs pb-space-xs">
+<div class="flex items-center gap-2 overflow-x-auto no-scrollbar py-1">
+<button class="suggestion-chip px-3 py-1.5 rounded-full bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label-sm text-label-sm shrink-0 flex items-center gap-1.5 active:scale-95 transition-all shadow-sm">
+<span>Share Room Note</span>
+<span class="text-primary font-bold">📎</span>
+</button>
+<button class="suggestion-chip px-3 py-1.5 rounded-full bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label-sm text-label-sm shrink-0 flex items-center gap-1.5 active:scale-95 transition-all shadow-sm">
+<span>Invite to Voice Lounge</span>
+<span>🎙️</span>
+</button>
+<button class="suggestion-chip px-3 py-1.5 rounded-full bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label-sm text-label-sm shrink-0 flex items-center gap-1.5 active:scale-95 transition-all shadow-sm">
+<span>Send Code / Data</span>
+<span>📊</span>
+</button>
+<button class="suggestion-chip px-3 py-1.5 rounded-full bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label-sm text-label-sm shrink-0 flex items-center gap-1.5 active:scale-95 transition-all shadow-sm">
+<span>Meetup in Hall 6</span>
+<span>📍</span>
+</button>
+</div>
+</div>
+<!-- Persistent Mobile Chat Composer -->
+<div class="sticky bottom-0 z-40 bg-surface/95 backdrop-blur-md px-margin-mobile pt-space-xs pb-space-sm shadow-[0_-4px_16px_rgba(0,0,0,0.03)]">
+<div class="flex items-center gap-2 bg-surface-container-lowest rounded-2xl p-1.5 shadow-md">
+<!-- Media Attachment Trigger -->
+<button aria-label="Attach File" class="w-10 h-10 rounded-full flex items-center justify-center text-on-surface-variant hover:text-primary hover:bg-surface-container transition-all shrink-0" id="attachMediaBtn">
+<span class="material-symbols-outlined text-[22px]">add_circle</span>
+</button>
+<!-- Spark Room Resource Picker -->
+<button class="w-10 h-10 rounded-full flex items-center justify-center text-tertiary hover:bg-tertiary-fixed transition-all shrink-0" id="roomResourceBtn" title="Link Community Topic">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">tag</span>
+</button>
+<!-- Dynamic Message Input -->
+<div class="flex-1 min-w-0">
+<input class="w-full bg-transparent border-0 outline-none text-on-surface font-body-md text-body-md placeholder:text-outline placeholder:font-body-md px-1 py-2 focus:ring-0" id="chatInput" placeholder="Message Sofia in #EcoFriendly..." type="text"/>
+</div>
+<!-- Voice Memo / Send Action Switcher -->
+<button aria-label="Record Voice Memo" class="w-10 h-10 rounded-full flex items-center justify-center text-on-surface-variant hover:text-primary hover:bg-surface-container transition-all shrink-0" id="micActionBtn">
+<span class="material-symbols-outlined text-[20px]">mic</span>
+</button>
+<button aria-label="Send Message" class="w-10 h-10 rounded-full bg-primary text-on-primary flex items-center justify-center shrink-0 hover:bg-primary-container active:scale-90 transition-all shadow-md" id="sendActionBtn">
+<span class="material-symbols-outlined text-[18px]">send</span>
+</button>
+</div>
+<!-- Active Room Footnote -->
+<div class="flex items-center justify-center gap-1.5 mt-1 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[11px] text-tertiary">lock</span>
+<span>Encrypted direct peer chat • Activity synced to NUS Syndicate</span>
+</div>
+</div>
+</div>
+<script>
+  // Simple micro-interactions for audio demo and input handling
+  const voicePlayBtn = document.getElementById('voicePlayBtn');
+  const playIcon = document.getElementById('playIcon');
+  let isPlaying = false;
+
+  if (voicePlayBtn && playIcon) {
+    voicePlayBtn.addEventListener('click', () => {
+      isPlaying = !isPlaying;
+      playIcon.textContent = isPlaying ? 'pause' : 'play_arrow';
+      voicePlayBtn.classList.toggle('bg-primary-container', isPlaying);
+    });
+  }
+
+  // Quick chips pre-fill
+  const chips = document.querySelectorAll('.suggestion-chip');
+  const chatInput = document.getElementById('chatInput');
+  const sendBtn = document.getElementById('sendActionBtn');
+
+  chips.forEach(chip => {
+    chip.addEventListener('click', () => {
+      const text = chip.querySelector('span:first-child')?.innerText;
+      if (chatInput && text) {
+        chatInput.value = text + ': ';
+        chatInput.focus();
+      }
+    });
+  });
+
+  // Bookmark toggle
+  const bookmarkBtn = document.getElementById('bookmarkPeerBtn');
+  if (bookmarkBtn) {
+    let saved = false;
+    bookmarkBtn.addEventListener('click', () => {
+      saved = !saved;
+      bookmarkBtn.innerHTML = saved 
+        ? '<span class="material-symbols-outlined text-[18px] text-primary" style="font-variation-settings: \'FILL\' 1;">bookmark</span>'
+        : '<span class="material-symbols-outlined text-[18px]">bookmark_add</span>';
+    });
+  }
+
+  // Basic message submission preview
+  if (sendBtn && chatInput) {
+    sendBtn.addEventListener('click', () => {
+      const val = chatInput.value.trim();
+      if (!val) return;
+
+      const stream = document.getElementById('chatMessageStream');
+      if (stream) {
+        const newMsg = document.createElement('div');
+        newMsg.className = "flex items-start gap-space-sm max-w-[88%] self-end flex-row-reverse animate-fade-in";
+        newMsg.innerHTML = `
+          <div class="w-8 h-8 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center shrink-0 mt-1 shadow-sm font-label-sm text-label-sm font-bold">
+            YOU
+          </div>
+          <div class="flex flex-col gap-1 items-end min-w-0">
+            <div class="bg-primary text-on-primary p-3.5 rounded-2xl rounded-tr-sm shadow-md">
+              <p class="font-body-md text-body-md leading-relaxed">${val}</p>
+            </div>
+            <div class="flex items-center gap-1.5 text-on-surface-variant font-label-sm text-label-sm pr-1">
+              <span>Just now</span>
+              <span class="inline-flex items-center text-primary-container">
+                <span class="material-symbols-outlined text-[15px]">done</span>
+              </span>
+            </div>
+          </div>
+        `;
+        stream.appendChild(newMsg);
+        chatInput.value = '';
+        window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+      }
+    });
+  }
+</script></main></body></html>

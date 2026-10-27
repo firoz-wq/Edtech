@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&family=Space+Grotesk:wght@600;700&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100..900&family=Space+Grotesk:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-secondary-fixed-variant": "#881d24", "primary-container": "#6c5ce7", "inverse-on-surface": "#eef0ff", "tertiary-fixed": "#ffdcc5", "on-secondary-container": "#720b16", "on-error-container": "#93000a", "outline": "#787586", "background": "#faf8ff", "tertiary-container": "#b05a03", "outline-variant": "#c8c4d7", "secondary-container": "#ff7675", "on-primary-fixed-variant": "#4029ba", "on-primary": "#ffffff", "error-container": "#ffdad6", "surface-container-lowest": "#ffffff", "secondary-fixed": "#ffdad8", "on-tertiary-container": "#fff5f1", "surface-tint": "#5847d2", "surface-container": "#eaedff", "inverse-primary": "#c6bfff", "primary-fixed": "#e4dfff", "on-secondary": "#ffffff", "surface-container-low": "#f2f3ff", "surface-dim": "#d2d9f4", "surface-container-highest": "#dae2fd", "on-primary-fixed": "#160066", "primary-fixed-dim": "#c6bfff", "tertiary-fixed-dim": "#ffb784", "surface-variant": "#dae2fd", "surface-container-high": "#e2e7ff", "on-tertiary-fixed": "#301400", "on-surface-variant": "#474554", "error": "#ba1a1a", "tertiary": "#8c4600", "secondary-fixed-dim": "#ffb3b0", "on-error": "#ffffff", "on-surface": "#131b2e", "inverse-surface": "#283044", "on-tertiary": "#ffffff", "on-secondary-fixed": "#410006", "surface": "#faf8ff", "surface-bright": "#faf8ff", "on-tertiary-fixed-variant": "#713700", "on-background": "#131b2e", "on-primary-container": "#faf6ff", "primary": "#5341cd", "secondary": "#a83639" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-lg": "1.5rem", "gutter": "1.5rem", "space-md": "1rem", "space-xl": "2.5rem", "margin-mobile": "1.25rem", "space-xs": "0.25rem", "margin": "3rem", "space-sm": "0.5rem", "gutter-mobile": "1rem" }, fontFamily: { "body-md": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Plus Jakarta Sans"], "label-sm": ["Space Grotesk"], "headline-sm": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "headline-xl": ["Plus Jakarta Sans"], "label-lg": ["Space Grotesk"], "label-md": ["Space Grotesk"], "body-lg": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "headline-xl-mobile": ["Plus Jakarta Sans"] }, fontSize: { "body-md": ["15px", { "lineHeight": "24px", "fontWeight": "400" }], "headline-md": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "700" }], "headline-lg-mobile": ["26px", { "lineHeight": "34px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "label-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "600" }], "headline-sm": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-xl": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.03em", "fontWeight": "800" }], "label-lg": ["14px", { "lineHeight": "18px", "letterSpacing": "0.02em", "fontWeight": "700" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.03em", "fontWeight": "600" }], "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }], "body-sm": ["13px", { "lineHeight": "20px", "fontWeight": "400" }], "headline-xl-mobile": ["34px", { "lineHeight": "42px", "letterSpacing": "-0.025em", "fontWeight": "800" }] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-on-surface antialiased flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 px-margin-mobile flex flex-col justify-center gap-space-xs"><div class="flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0"><img alt="Spark Brand Icon" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDuQqZ3TBJyXiDCUcY35jRZG55LFcm6ceyqWRED9G8o9qOt_t83a4FAHbDMj-S5u85p0jADWL8okTp4-VPn2LNBo8LgXpXFRBJ6J7W7FaPAt973xPISwv5RPhmAbjzjZZTJFspz4iGblA_TZdYqQ1qkSsTtjZWJoLqUfr4iD8nI1143m2_menyHSg77Fe6PmKCsgHES8wsMKouKTmtxo-yg7a6WasJpC95DnaFjFquCfW7aZ95SMc5V"/><div class="flex flex-col min-w-0"><span class="font-label-sm text-label-sm text-primary tracking-wider uppercase leading-none">Spark Net</span><span class="font-headline-sm text-headline-sm text-on-surface truncate leading-tight">Live And Events</span></div></div><div class="flex items-center gap-space-xs shrink-0"><div class="relative flex items-center bg-surface-container-low rounded-full px-3 py-1.5 w-32 focus-within:w-40 transition-all duration-300"><span class="material-symbols-outlined text-outline text-[18px]">search</span><input class="bg-transparent w-full ml-1.5 text-body-sm font-body-sm text-on-surface placeholder:text-outline focus:outline-none" placeholder="Explore..." type="search"/></div><a class="relative w-11 h-11 rounded-full flex items-center justify-center text-on-surface-variant hover:text-primary transition-colors" data-path="notifications" href="#"><span class="material-symbols-outlined text-[24px]">notifications</span><span class="absolute top-2 right-2 flex items-center justify-center min-w-[16px] h-4 px-1 rounded-full bg-secondary text-on-secondary font-label-sm text-[9px] font-bold leading-none ring-2 ring-surface">3</span></a><a class="w-11 h-11 flex items-center justify-center shrink-0" data-path="profile-settings" href="#"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-primary/20" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCPqkG9b52LJlt55yNBfubeI-aKPMxhsM9i4mjcTIqVFDzQiwA3GgfxyHgbF7WKRzXfo-KNL-L4W2QaHX2hk0PzMCbKytsQY2VvZ-Fs-S_5cXv3GvFhkUxM3JGzUsLxqX0cegPd3RHEVtO0rNVyPwRpalWXyJmVcfsj1ycHaAJVAONFvCR6xlp5F0lV8qyV3OK91m3X90zPDolMkHxUd6zvY-NR3pMdfnRDKjQQJM3JzwtnKohWnSN0"/></a></div></div></div></header><main class="flex-1 flex flex-col relative w-full pt-20 pb-24 bg-surface"><div class="flex flex-col w-full px-margin-mobile pb-8 space-y-6">
+<!-- Live Pulse Status Sub-Banner -->
+<div class="flex items-center justify-between bg-surface-container-low px-4 py-3 rounded-xl shadow-sm">
+<div class="flex items-center gap-2.5">
+<span class="relative flex h-3 w-3">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-3 w-3 bg-secondary"></span>
+</span>
+<span class="font-label-md text-label-md text-on-surface">1,760 Scholars actively discussing now</span>
+</div>
+<div class="flex items-center gap-1 text-primary cursor-pointer" onclick="toggleActiveFilter()">
+<span class="font-label-sm text-label-sm tracking-wider uppercase">Filter</span>
+<span class="material-symbols-outlined text-[16px]">tune</span>
+</div>
+</div>
+<!-- Section 1: Live Now Stages Carousel -->
+<section class="flex flex-col space-y-3">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[22px]" style="font-variation-settings: 'FILL' 1;">sensors</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Live Stages</h2>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Swipe for more</span>
+</div>
+<!-- Horizontal Swipeable Stage Cards -->
+<div class="flex overflow-x-auto gap-4 no-scrollbar -mx-margin-mobile px-margin-mobile pb-2 snap-x snap-mandatory">
+<!-- Live Card 1: Video Stream -->
+<div class="snap-start shrink-0 w-[88vw] max-w-[340px] bg-surface-container-lowest rounded-xl overflow-hidden shadow-md flex flex-col justify-between">
+<div class="relative h-44 w-full bg-inverse-surface">
+<img class="w-full h-full object-cover" data-alt="A vivid, sharp keynote broadcast setup of Dr. Elena Vance presenting real-time ecological climate data on holographic displays with electric violet, coral, and deep slate ambient studio illumination, collegiate audience engagement, cinematic focus." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB2vX2LQ40AuailCBVYMO_SdYzISExkgurhNnGyi7q-jhIRaUTL9wWXIr88o4JtJfHTXG9UEDikFAboRqycuLKkH6NDlNoReMQlEPf1RCOido66lna9iVzlB2kJWMpmI9EyLhllrjitZMCt3aa-DJtps007g40H4HJMpDBX8Y8kU8VZy9KLshR4OkmAV-BVG5DJ4Esuuh-uDFo7wXhKevncXVafDFFevUALVlusBNiq64Ive9OmIdwe"/>
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/90 via-inverse-surface/30 to-transparent"></div>
+<!-- Badges on image -->
+<div class="absolute top-3 left-3 flex items-center gap-2">
+<span class="bg-secondary text-on-secondary font-label-sm text-label-sm px-2.5 py-1 rounded-full uppercase tracking-wider flex items-center gap-1 shadow-sm">
+<span class="h-1.5 w-1.5 rounded-full bg-surface-container-lowest animate-pulse"></span>
+              Live Streaming
+            </span>
+<span class="bg-inverse-surface/80 backdrop-blur-md text-inverse-on-surface font-label-sm text-label-sm px-2 py-0.5 rounded-full flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">visibility</span>
+              1,420
+            </span>
+</div>
+<div class="absolute bottom-3 left-3 right-3 flex items-center justify-between text-inverse-on-surface">
+<div class="flex items-center gap-2">
+<div class="relative">
+<img class="w-9 h-9 rounded-full object-cover shadow-md" data-alt="Portrait of Dr. Elena Vance, distinguished middle-aged female climate scientist wearing spectacles and a smart blazer, warm confident expression, soft educational studio backdrop." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBA5vs_5XdG4AyFaYLEbs1-_opT6aauzckjZxYY81M7rfXdtww-vSIjOMDkw3jniaSrtISLuYBcax8HyuUWuDwTfFebsm72fT1uQQ4iftiltOiM2FPFJlplHY42N0q0xLa2pUeKBWAXBzcBVV83bwWs3L1PSb3f_GYm0DUO-HrjjNxTdJxig18OrwkRQTs4tXSCjH4mjskNNgnicpLkOWbxVSQWmWwIY5kkoIUjBuzQrnvoRht_bz6I"/>
+<span class="material-symbols-outlined absolute -bottom-1 -right-1 text-primary-container bg-surface-container-lowest rounded-full text-[14px]" style="font-variation-settings: 'FILL' 1;">verified</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-headline-sm text-inverse-on-surface text-[14px] leading-tight truncate">Dr. Elena Vance</span>
+<span class="font-label-sm text-label-sm text-surface-container-highest truncate">Lead Climate Scientist</span>
+</div>
+</div>
+<!-- Speaking wave micro-visualizer -->
+<div class="flex items-end gap-0.5 h-4 px-1.5 py-0.5 bg-inverse-surface/60 rounded">
+<span class="w-1 bg-secondary-container h-3 rounded-full animate-bounce"></span>
+<span class="w-1 bg-secondary-container h-4 rounded-full animate-bounce [animation-delay:0.15s]"></span>
+<span class="w-1 bg-secondary-container h-2 rounded-full animate-bounce [animation-delay:0.3s]"></span>
+</div>
+</div>
+</div>
+<div class="p-4 flex flex-col justify-between flex-1 space-y-3">
+<div>
+<div class="flex gap-1.5 mb-2">
+<span class="bg-surface-container-high text-primary font-label-sm text-label-sm px-2 py-0.5 rounded-full">Zero-Waste</span>
+<span class="bg-surface-container-high text-tertiary-container font-label-sm text-label-sm px-2 py-0.5 rounded-full">Global Warming</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface text-[16px] leading-snug line-clamp-2">
+              How to Reduce Global Warming & Zero-Waste Campus Architectures
+            </h3>
+</div>
+<div class="pt-1 flex items-center justify-between">
+<!-- Co-hosts avatars stack -->
+<div class="flex -space-x-2 overflow-hidden">
+<img class="inline-block h-6 w-6 rounded-full object-cover" data-alt="University researcher avatar smiling, warm studio lighting with electric violet tint." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD05fqnJGw4Lflzh6h0hypkfjXp8CTQaO_SOAIuUCnKMosJTCyryQ2N3HCnFgZN5jkwzX7JarMslZ6_8kVfkA6_EHEcR72gwo3zrTDdlszRG8CTQomq4Aq02ztyUJ46gQOQafwwecJSYJSBb_dRLIlEDaK8tt96UGF7GedQvgLctTSehAofkQXUokPEjHZrl93MRdOTROSywOH1zd_t1TSKNQKPrgq5WQDl_yGo0mflged3XtmF3HEg"/>
+<img class="inline-block h-6 w-6 rounded-full object-cover" data-alt="Student activist avatar with curly hair, natural outdoor university green lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBxj_hx1VduubTRqq-3qUZubOoxYB3CIqz4-10vu5dAPDUREMOHnsJGZ32i_jEscbW1A3XylIm4ypASWAADf5EJVzHugUnRHTzmJL45HjZnbmSNDh2D7wcRGnAZXUI42bZpMizzkZvZq70TXykxXGnUj_3jF70a6aArfI6ERWu6SXh7LpXGIA0usBgkMPNncnW4-3eTKipscHLp4AOZaXh-635rPUpnXkMJ1gc_b6vkaIJJ6GJLVYpH"/>
+<img class="inline-block h-6 w-6 rounded-full object-cover" data-alt="Biologist student avatar smiling softly with warm peach undertones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDbVt6MAi8UqRQoQ6VsbZCU60vNOequ0Jhn6TpiOycbA6RX9O0oXVKSl7j5ZrEO27LGkSvVJgICEC1MOPGvI-ZsN4eRk5uDAwWfXPukZbgsatk37T0PGuenxoVJpN1m7Xya6zO5M1TKeIXpg22GKFVVZ6BFoYbM9gcFEjCId7Z7C_BRJ05hEHOuJKZWsda5Bict8x1r20b8xfvA6fyFEnJo8WaykgDr7WI4YyqHDg3Iou3P6jJ6xujx"/>
+</div>
+<button class="bg-primary text-on-primary font-label-md text-label-md px-4 py-2 rounded-full flex items-center gap-1.5 shadow-sm active:scale-95 transition-transform" onclick="joinRoom(this, 'stream-1')">
+<span class="material-symbols-outlined text-[16px]">podium</span>
+<span>Join Live Stage</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Live Card 2: Audio Room -->
+<div class="snap-start shrink-0 w-[88vw] max-w-[340px] bg-surface-container-lowest rounded-xl p-4 shadow-md flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-3">
+<span class="bg-surface-container text-on-primary-fixed-variant font-label-sm text-label-sm px-2.5 py-1 rounded-full uppercase tracking-wider flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">graphic_eq</span>
+              Live Audio Room
+            </span>
+<span class="bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm px-2.5 py-0.5 rounded-full flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">headphones</span>
+              340 listening
+            </span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface text-[16px] leading-snug mb-3">
+            Home Remedy & Science: Debunking Myths with Biotech Postdocs
+          </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mb-4">
+            Interactive debunking of trending viral nutrition hacks, gut-microbiome trends, and folk cures using peer-reviewed immunology metrics.
+          </p>
+</div>
+<div>
+<!-- Active Speakers Row with Pulse circles -->
+<div class="flex items-center gap-3 bg-surface-container-low p-2.5 rounded-xl mb-3">
+<div class="relative">
+<img class="w-10 h-10 rounded-full object-cover" data-alt="Bio-tech researcher avatar in lab coat, friendly expression, cool blue-green laboratory lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAT0AaR47YdFtNOSdOwG_ffJPQ2sKCZbBaZfjz1DFXylCNHaut0L-9h7yD6oiJpJh_iPQjq_ja-pzZFG0H1fuNtRk-ucEbe9HskPNGWrmwfGafUVMAIpIQ0uQejkAQHPU-fAIKmzu3Dt3EOgZVQ-nbWWwqYyBG2Alqo9DD3envqPkUwxEbmcjZt9zbfgNHqIM5CoXkRZpJESlHpdPRRTVY1__tlUqqZPu87uvCxJi6mbb2IIUvopcU9"/>
+<span class="absolute bottom-0 right-0 w-3 h-3 bg-primary rounded-full flex items-center justify-center text-[8px] text-on-primary">
+<span class="material-symbols-outlined text-[9px]">mic</span>
+</span>
+</div>
+<div class="relative">
+<img class="w-10 h-10 rounded-full object-cover" data-alt="Post-graduate pharmaceutical student avatar, attentive expression, warm minimalist library lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDUd5CoQRio0-B2I9ocpg9q3b-ISw5AwcuVxHQ_vdnnhdGlm7lIoVCY7a3wXpDQcsZXrcoMG7L47_Jpo5vlgTB2E4TBOp9BFc47IjfWA-8fy1wd6VYRY_ZAB2kFpWoKHGIrUwdjmNIHKZAhQnFA2yN1q0tZ2JNBWKFq6_AG_5aeIKk0uaXxfflxDnmQjXkv3bgu8kkCPbcAId-pj9SR4wiQHjI8aUcHCAZtj69EqRh81UDnQbYvmyDr"/>
+<span class="absolute bottom-0 right-0 w-3 h-3 bg-secondary rounded-full flex items-center justify-center text-[8px] text-on-secondary">
+<span class="material-symbols-outlined text-[9px]">mic</span>
+</span>
+</div>
+<div class="flex flex-col min-w-0 flex-1">
+<span class="font-headline-sm text-headline-sm text-[13px] leading-tight truncate">Dr. Aris Chen & Maya Sato</span>
+<span class="font-body-sm text-body-sm text-outline text-[12px] truncate">Hosting Q&A Session</span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-1">
+<div class="flex items-center gap-1 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">front_hand</span>
+<span>12 hands raised</span>
+</div>
+<button class="bg-secondary-container text-on-secondary-container font-label-md text-label-md px-4 py-2 rounded-full flex items-center gap-1.5 shadow-sm active:scale-95 transition-transform" onclick="joinRoom(this, 'audio-1')">
+<span class="material-symbols-outlined text-[16px]">volume_up</span>
+<span>Listen In</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 2: Collaborative Brainstorming & Solution Boards -->
+<section class="flex flex-col space-y-4">
+<!-- Challenge Spotlight Banner -->
+<div class="bg-gradient-to-br from-primary via-primary-container to-primary-container p-4 rounded-xl text-on-primary shadow-lg flex flex-col space-y-3">
+<div class="flex items-center justify-between">
+<span class="bg-surface-container-lowest/20 backdrop-blur-md font-label-sm text-label-sm px-2.5 py-0.5 rounded-full uppercase tracking-wider flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">psychology</span>
+          Active Sprint Challenge
+        </span>
+<span class="font-label-sm text-label-sm text-surface-container-highest flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">timer</span> 4 days left
+        </span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-on-primary text-[20px] leading-snug">
+          Carbon Blueprints for High Schools & Universities
+        </h3>
+<p class="font-body-sm text-body-sm text-surface-container-highest mt-1">
+          Open syndicate co-creation: Pitch modular implementations to offset academic institution emissions.
+        </p>
+</div>
+<div class="flex items-center justify-between pt-1">
+<div class="flex items-center gap-2">
+<span class="font-label-lg text-label-lg bg-surface-container-lowest/15 px-2.5 py-1 rounded-lg">
+            84 solutions submitted
+          </span>
+</div>
+<button class="bg-surface-container-lowest text-primary font-label-md text-label-md px-3.5 py-1.5 rounded-full flex items-center gap-1 shadow-sm active:scale-95 transition-transform" onclick="openSubmitModal()">
+<span class="material-symbols-outlined text-[16px]">add_circle</span>
+<span>Pitch Idea</span>
+</button>
+</div>
+</div>
+<!-- Solution Boards List Title -->
+<div class="flex items-center justify-between pt-1">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Trending Solution Nodes</h3>
+<span class="font-label-sm text-label-sm text-primary cursor-pointer">Sort by: Upvotes ▼</span>
+</div>
+<!-- Solution Card 1 -->
+<div class="bg-surface-container-lowest rounded-xl p-4 shadow-sm flex flex-col space-y-3">
+<div class="flex items-start justify-between gap-3">
+<div class="flex items-center gap-2.5">
+<img class="w-10 h-10 rounded-full object-cover" data-alt="Student designer profile avatar, energetic young Dutch female scholar with glasses and knit sweater against creative studio backdrop." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAgbbVLOkZCGpR3vNqLHN1GDmqjiX0p16Q9mAY612RQRlOfdlQlwvdda6OtS_tZxDGdzF_vEqreSgsJX_3J6bb5oK1Va72YlhRQFeQ_QBUaqEYLF55ApLgV9hWTK8VOioNV889hlYQgWu_7sYcOwxzktDz7V3whS7bt8T70_vzgmOwgoZrYVhbMOScoE-OSZEZbXOXFRTzhS1S-fOmOryxrz72GaY9qGCsipq3bB-vKOCsS-NHv6LqT"/>
+<div>
+<div class="flex items-center gap-1.5">
+<span class="font-headline-sm text-headline-sm text-[15px] text-on-surface">Lars van Dijk</span>
+<span class="text-[14px]" title="Netherlands">🇳🇱</span>
+<span class="bg-surface-container text-primary font-label-sm text-label-sm px-1.5 py-0.5 rounded">TU Delft</span>
+</div>
+<span class="font-body-sm text-body-sm text-outline text-[12px]">Posted 3 hrs ago • Architecture Track</span>
+</div>
+</div>
+<button class="flex flex-col items-center justify-center bg-surface-container-low hover:bg-surface-container active:scale-90 transition-all rounded-xl px-2.5 py-1.5 text-primary" onclick="toggleUpvote(this, 512)">
+<span class="material-symbols-outlined text-[18px]">keyboard_arrow_up</span>
+<span class="font-label-md text-label-md upvote-count">512</span>
+</button>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface text-[17px] leading-tight">
+          Micro-forest on Campus Roofs: Passive Cooling System
+        </h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1.5 line-clamp-2">
+          Utilizing lightweight perlite matrices with native mycorrhizal soil fungi to grow hyper-dense micro-canopies that reduce HVAC power loads by 38%.
+        </p>
+</div>
+<!-- Diagram / Prototype Thumbnail -->
+<div class="relative w-full h-36 rounded-lg overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Technical architectural isometric diagram sketch of a modular rooftop micro-forest showing layered perlite insulation, rainwater catchment channels, and lush green moss canopy, clean blueprint lines with coral accents." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAq-YqA7nK5foPUL4JlgYedO4rVsSjbym2F6pGcxRqlSslFU6GAqiH_ZO92mHNQESpNfe5iPD-7k80rqvzymtEANPpySkmWun8qQJxpofVDeXindd9uSrY-iqIMuqmUdXBHnLvh2hdTu5p7kwXL67m3xxYUg4nXJ2zapwBgdmUg4yH13vPrnFpG8ZNSlcSQYV8B9lsJFq_EsufFBWZ4kEfR94YKBOpEiDBQRQfN7gtsh4F1FMrrO9dg"/>
+<div class="absolute bottom-2 left-2 bg-inverse-surface/80 backdrop-blur-md px-2 py-0.5 rounded text-inverse-on-surface font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">architecture</span>
+          Prototype Spec v2.1
+        </div>
+</div>
+<div class="flex flex-wrap gap-1.5">
+<span class="bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm px-2 py-0.5 rounded-full">#Permaculture</span>
+<span class="bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm px-2 py-0.5 rounded-full">#SmartGrid</span>
+<span class="bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm px-2 py-0.5 rounded-full">#HVACReduction</span>
+</div>
+<div class="pt-2 flex items-center justify-between border-t border-surface-container">
+<div class="flex items-center gap-4 text-outline font-label-sm text-label-sm">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">forum</span> 46 comments
+          </span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">group_work</span> 6 co-creators
+          </span>
+</div>
+<button class="bg-surface-container-low text-primary hover:bg-surface-container font-label-md text-label-md px-3 py-1.5 rounded-full flex items-center gap-1 active:scale-95 transition-transform">
+<span>Co-create</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Solution Card 2 -->
+<div class="bg-surface-container-lowest rounded-xl p-4 shadow-sm flex flex-col space-y-3">
+<div class="flex items-start justify-between gap-3">
+<div class="flex items-center gap-2.5">
+<img class="w-10 h-10 rounded-full object-cover" data-alt="Student bio-engineer avatar, African-descended male scholar smiling confidently with modern urban university backdrop." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDnKwC_wfODoQ6ysj-dVhCYDXQj6hqmACjJbGrphK0vaHGRRT29vq2KtzHBLG4hSGqwMAvISxEn620KCrrj5x3iD3OvExMhgob7pA3zzs-hjYh6ZxYhksXUEzWXpmxdXLoNbV1PNkP4I8lEfZQ1nfQqj1VZo7xi_R6nQl-b8iCvjuNIdZEG5kjm1gTvu0STPaMdpvuqdMCg_OccE7tPzWKlXVjXY39AFyAglrbJeMNVuQuF4RgfA_HZ"/>
+<div>
+<div class="flex items-center gap-1.5">
+<span class="font-headline-sm text-headline-sm text-[15px] text-on-surface">Kofi Mensah</span>
+<span class="text-[14px]" title="Ghana">🇬🇭</span>
+<span class="bg-surface-container text-primary font-label-sm text-label-sm px-1.5 py-0.5 rounded">KNUST</span>
+</div>
+<span class="font-body-sm text-body-sm text-outline text-[12px]">Posted 7 hrs ago • Energy & Waste</span>
+</div>
+</div>
+<button class="flex flex-col items-center justify-center bg-surface-container-low hover:bg-surface-container active:scale-90 transition-all rounded-xl px-2.5 py-1.5 text-primary" onclick="toggleUpvote(this, 342)">
+<span class="material-symbols-outlined text-[18px]">keyboard_arrow_up</span>
+<span class="font-label-md text-label-md upvote-count">342</span>
+</button>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface text-[17px] leading-tight">
+          Dining Hall Algae Digestion: Biogas for Physics Labs
+        </h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1.5 line-clamp-2">
+          Transforming daily organic food scrap sludge into high-yield pressurized methane canisters to replace fossil fuel utility inputs for school chemistry & physics burners.
+        </p>
+</div>
+<div class="flex flex-wrap gap-1.5">
+<span class="bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm px-2 py-0.5 rounded-full">#CircularBio</span>
+<span class="bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm px-2 py-0.5 rounded-full">#WasteToWatts</span>
+</div>
+<div class="pt-2 flex items-center justify-between border-t border-surface-container">
+<div class="flex items-center gap-4 text-outline font-label-sm text-label-sm">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">forum</span> 28 comments
+          </span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">group_work</span> 4 co-creators
+          </span>
+</div>
+<button class="bg-surface-container-low text-primary hover:bg-surface-container font-label-md text-label-md px-3 py-1.5 rounded-full flex items-center gap-1 active:scale-95 transition-transform">
+<span>Co-create</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Section 3: Upcoming Expert Talks & AMAs -->
+<section class="flex flex-col space-y-3">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary text-[22px]">calendar_month</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Upcoming AMAs & Talks</h2>
+</div>
+<span class="font-label-sm text-label-sm text-primary cursor-pointer">Calendar</span>
+</div>
+<!-- Scheduled Event Card -->
+<div class="bg-surface-container-lowest rounded-xl p-4 shadow-sm flex flex-col space-y-3">
+<!-- Countdown ticker header -->
+<div class="flex items-center justify-between bg-surface-container-low px-3 py-2 rounded-lg">
+<div class="flex items-center gap-1.5 text-tertiary">
+<span class="material-symbols-outlined text-[18px]">alarm</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Starts in:</span>
+</div>
+<!-- Live countdown blocks -->
+<div class="flex items-center gap-1.5 font-label-md text-label-md text-on-surface">
+<span class="bg-surface-container-highest px-1.5 py-0.5 rounded text-[12px] font-bold" id="cd-hrs">02</span>h
+          <span class="bg-surface-container-highest px-1.5 py-0.5 rounded text-[12px] font-bold" id="cd-min">45</span>m
+          <span class="bg-surface-container-highest px-1.5 py-0.5 rounded text-[12px] font-bold" id="cd-sec">18</span>s
+        </div>
+</div>
+<div class="flex items-start gap-3">
+<div class="relative shrink-0">
+<img class="w-14 h-14 rounded-xl object-cover shadow-sm" data-alt="Portrait of Dr. Hidenori Tanaka, senior quantum AI researcher with spectacles, warm intellectual setting, subtle high-tech studio light flares." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC1Ru9Fj3xvK3j_ktCrhiaAMgzcoezsgK0dSy9mK6dz3pK-FNOfdLg_DsjEB6LQxaQRlmFGEoudyg_Du353luHElBeUt8Zo1OZ4Tla5CB9Ii_WnhuVNnyk6JtfAl8aN8QLmN4p_12PWY8ml_3bLDpzvFhgeuQRKZtAb-_bXeThsR-HLqCdWsLeiid1enW5vxPRcZK2-hYZLXqBdHLSYqsWzbxFs5VRE5FnMeEpF8ileNPLey__3hnae"/>
+<span class="absolute -top-1.5 -left-1.5 bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-[10px] px-1.5 py-0.5 rounded-full font-bold">AMA</span>
+</div>
+<div class="flex flex-col min-w-0 flex-1">
+<h4 class="font-headline-sm text-headline-sm text-on-surface text-[16px] leading-snug">
+            Quantum Computing for Complex Protein Folding & Vaccine Synthesis
+          </h4>
+<span class="font-body-sm text-body-sm text-primary mt-0.5">Dr. Hidenori Tanaka • Stanford Bio-AI</span>
+<span class="font-label-sm text-label-sm text-outline mt-1">Today @ 6:00 PM CET • Stage Beta</span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-1">
+<div class="flex items-center gap-2">
+<div class="flex -space-x-1.5 overflow-hidden">
+<span class="inline-block h-5 w-5 rounded-full bg-primary/20 text-[9px] font-bold text-primary flex items-center justify-center">8k</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">812 attending</span>
+</div>
+<button class="rsvp-btn bg-primary text-on-primary font-label-md text-label-md px-4 py-2 rounded-full flex items-center gap-1.5 shadow-sm active:scale-95 transition-all" onclick="toggleRsvp(this)">
+<span class="material-symbols-outlined text-[16px]">bookmark_add</span>
+<span>RSVP Reminder</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Sticky / Quick Action Buttons Container -->
+<div class="pt-2 flex items-center gap-3">
+<!-- Go Live button -->
+<button class="flex-1 bg-secondary text-on-secondary py-3 px-4 rounded-xl shadow-md flex items-center justify-center gap-2 font-label-lg text-label-lg active:scale-95 transition-transform" onclick="startHostRoom()">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">cell_tower</span>
+<span>Go Live / Start Room</span>
+</button>
+<!-- Brainstorm Spark trigger -->
+<button class="bg-primary text-on-primary p-3 rounded-xl shadow-md flex items-center justify-center active:scale-95 transition-transform" onclick="openSubmitModal()" title="Submit Solution">
+<span class="material-symbols-outlined text-[24px]">lightbulb</span>
+</button>
+</div>
+<!-- Interactive Slide-up Mini Drawer for Solution Pitching -->
+<div class="fixed inset-x-0 bottom-0 z-50 bg-surface-container-lowest p-6 rounded-t-2xl shadow-2xl flex flex-col space-y-4 transform translate-y-full transition-transform duration-300" id="idea-modal">
+<div class="w-12 h-1 bg-surface-container-high rounded-full self-center cursor-pointer" onclick="closeSubmitModal()"></div>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[22px]">draw</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Submit Solution Node</h3>
+</div>
+<button class="text-outline hover:text-on-surface" onclick="closeSubmitModal()">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<div class="flex flex-col space-y-3">
+<div>
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider block mb-1">Concept Headline</label>
+<input class="w-full bg-surface-container-low rounded-xl px-3.5 py-2.5 font-body-sm text-body-sm text-on-surface focus:outline-none focus:bg-surface-container" placeholder="e.g. Gravity-fed Rainwater Graying..." type="text"/>
+</div>
+<div>
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider block mb-1">Brief Technical Mechanism</label>
+<textarea class="w-full bg-surface-container-low rounded-xl px-3.5 py-2 font-body-sm text-body-sm text-on-surface focus:outline-none focus:bg-surface-container resize-none" placeholder="Outline how students or faculties can execute this..." rows="3"></textarea>
+</div>
+<div class="flex items-center justify-between pt-2">
+<div class="flex items-center gap-2 text-primary font-label-sm text-label-sm cursor-pointer">
+<span class="material-symbols-outlined text-[18px]">attachment</span>
+<span>Attach Schematic / Code</span>
+</div>
+<button class="bg-primary text-on-primary font-label-md text-label-md px-5 py-2.5 rounded-full active:scale-95 transition-transform" onclick="publishIdea()">
+          Publish to Syndicate
+        </button>
+</div>
+</div>
+</div>
+<!-- Toast Notification Overlay -->
+<div class="fixed top-24 left-1/2 transform -translate-x-1/2 bg-inverse-surface text-inverse-on-surface px-4 py-2 rounded-full font-label-sm text-label-sm shadow-xl flex items-center gap-2 opacity-0 pointer-events-none transition-opacity duration-300 z-50" id="toast">
+<span class="material-symbols-outlined text-[16px] text-secondary-container">check_circle</span>
+<span id="toast-msg">Joined stage session</span>
+</div>
+</div>
+<script>
+  // Countdown simulation
+  let sec = 18;
+  let min = 45;
+  let hrs = 2;
+  setInterval(() => {
+    sec--;
+    if (sec < 0) {
+      sec = 59;
+      min--;
+      if (min < 0) {
+        min = 59;
+        hrs--;
+      }
+    }
+    const secEl = document.getElementById('cd-sec');
+    const minEl = document.getElementById('cd-min');
+    const hrsEl = document.getElementById('cd-hrs');
+    if (secEl) secEl.innerText = sec < 10 ? '0' + sec : sec;
+    if (minEl) minEl.innerText = min < 10 ? '0' + min : min;
+    if (hrsEl) hrsEl.innerText = hrs < 10 ? '0' + hrs : hrs;
+  }, 1000);
+
+  // Upvoting trigger
+  function toggleUpvote(btn, baseCount) {
+    const countEl = btn.querySelector('.upvote-count');
+    const icon = btn.querySelector('.material-symbols-outlined');
+    const isVoted = btn.dataset.voted === 'true';
+
+    if (isVoted) {
+      btn.dataset.voted = 'false';
+      btn.classList.remove('bg-primary', 'text-on-primary');
+      btn.classList.add('bg-surface-container-low', 'text-primary');
+      countEl.innerText = baseCount;
+    } else {
+      btn.dataset.voted = 'true';
+      btn.classList.remove('bg-surface-container-low', 'text-primary');
+      btn.classList.add('bg-primary', 'text-on-primary');
+      countEl.innerText = baseCount + 1;
+      showToast('Solution upvoted & highlighted!');
+    }
+  }
+
+  // RSVP toggle
+  function toggleRsvp(btn) {
+    const isRsvpd = btn.dataset.rsvpd === 'true';
+    if (isRsvpd) {
+      btn.dataset.rsvpd = 'false';
+      btn.classList.remove('bg-surface-container-high', 'text-on-surface');
+      btn.classList.add('bg-primary', 'text-on-primary');
+      btn.innerHTML = `<span class="material-symbols-outlined text-[16px]">bookmark_add</span><span>RSVP Reminder</span>`;
+      showToast('Reminder canceled');
+    } else {
+      btn.dataset.rsvpd = 'true';
+      btn.classList.remove('bg-primary', 'text-on-primary');
+      btn.classList.add('bg-surface-container-high', 'text-on-surface');
+      btn.innerHTML = `<span class="material-symbols-outlined text-[16px] text-primary" style="font-variation-settings: 'FILL' 1;">check</span><span>Saved to Calendar</span>`;
+      showToast('RSVP Confirmed for Stanford AMA!');
+    }
+  }
+
+  // Join Stage
+  function joinRoom(btn, roomId) {
+    showToast('Connecting audio streams to Stage...');
+  }
+
+  // Go live action
+  function startHostRoom() {
+    showToast('Preparing microphone and camera stages...');
+  }
+
+  // Idea pitch drawer
+  function openSubmitModal() {
+    const modal = document.getElementById('idea-modal');
+    if (modal) modal.classList.remove('translate-y-full');
+  }
+
+  function closeSubmitModal() {
+    const modal = document.getElementById('idea-modal');
+    if (modal) modal.classList.add('translate-y-full');
+  }
+
+  function publishIdea() {
+    closeSubmitModal();
+    showToast('Your Blueprint node was submitted to the Syndicate!');
+  }
+
+  function toggleActiveFilter() {
+    showToast('Filtered: Showing live discussions first');
+  }
+
+  // Toast utility
+  function showToast(msg) {
+    const toast = document.getElementById('toast');
+    const toastMsg = document.getElementById('toast-msg');
+    if (toast && toastMsg) {
+      toastMsg.innerText = msg;
+      toast.classList.remove('opacity-0', 'pointer-events-none');
+      setTimeout(() => {
+        toast.classList.add('opacity-0', 'pointer-events-none');
+      }, 2500);
+    }
+  }
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/85 backdrop-blur-xl shadow-[0_-2px_12px_rgba(0,0,0,0.03)]" data-active-classes="text-primary font-bold"><div class="flex justify-around items-center h-16 px-space-xs"><a class="flex flex-col items-center justify-center gap-1 min-w-[56px] min-h-[44px] py-1 text-on-surface-variant hover:text-primary transition-colors" data-path="feed" href="#"><span class="material-symbols-outlined text-[22px]">dynamic_feed</span><span class="font-label-sm text-label-sm tracking-tight">Feed</span></a><a class="flex flex-col items-center justify-center gap-1 min-w-[56px] min-h-[44px] py-1 text-on-surface-variant hover:text-primary transition-colors" data-path="rooms" href="#"><span class="material-symbols-outlined text-[22px]">grid_view</span><span class="font-label-sm text-label-sm tracking-tight">Rooms</span></a><a aria-current="page" class="flex flex-col items-center justify-center gap-1 min-w-[56px] min-h-[44px] py-1 transition-colors text-primary font-bold" data-path="live-and-events" href="#"><span class="material-symbols-outlined text-[22px]">sensors</span><span class="font-label-sm text-label-sm tracking-tight">Live</span></a><a class="flex flex-col items-center justify-center gap-1 min-w-[56px] min-h-[44px] py-1 text-on-surface-variant hover:text-primary transition-colors" data-path="people-and-experts" href="#"><span class="material-symbols-outlined text-[22px]">diversity_3</span><span class="font-label-sm text-label-sm tracking-tight">People</span></a><a class="flex flex-col items-center justify-center gap-1 min-w-[56px] min-h-[44px] py-1 text-on-surface-variant hover:text-primary transition-colors" data-path="chat-and-connect" href="#"><span class="material-symbols-outlined text-[22px]">chat_bubble</span><span class="font-label-sm text-label-sm tracking-tight">Chat</span></a></div></nav></body></html>

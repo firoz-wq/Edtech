@@ -1,0 +1,8 @@
+{
+  "name": "Spark Net",
+  "description": "Collaborative educational research network, study syndicates, interactive live stages, and student communities.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
